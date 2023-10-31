@@ -38,12 +38,12 @@
           </div>
           <div class="SocialMedia">
             <a
-              href="https://www.facebook.com/norteautopecas"
+              href="https://www.instagram.com/norteautopecas_/"
               target="_blank"
             >
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/norteautopecas_/" target="_blank">
+            <a href="https://www.facebook.com/norteautopecas" target="_blank">
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a
@@ -79,75 +79,23 @@
 
     <!-- Main - conteudo da pagina -->
     <!-- Slide da Pagina. -->
-    <section class="secSlide">
-    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
-    css-mode="true">
-    <swiper-slide><img src="style/public/img/Slides/slide1.png" alt=""></swiper-slide>
-    <swiper-slide><img src="style/public/img/Slides/slide2.png" alt=""></swiper-slide>
-    <swiper-slide><img src="style/public/img/Slides/slide3.png" alt=""></swiper-slide>
-    <swiper-slide><img src="style/public/img/Slides/slide4.png" alt=""></swiper-slide>
-    
-  </swiper-container>
-    </section>
-  <!-- fim slide -->
-
-  <footer>
-    <div class="container">
-        <section class="footerMain">
-        <div class="aboutNorte">
-          <img src="style/public/img/logosNorte/Logo Grupo Norte (Branca).png" alt="Logo de todos os grupos da empresa">
-          <p>
-            A Norte Auto Peças tem mais de 27 anos de experiência no setor de autopeças, com 36 lojas nas regiões Norte, Nordeste e Sudeste. Fundada com foco na região amazônica, prioriza confiabilidade e qualidade no atendimento. Atualmente, é reconhecida como uma empresa confiável e inovadora nos mercados em que atua.
-          </p>
+    <div class="containerSlide">
+      <div id="slideshow-example" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <img src="style/public/img/Slides/slide (1).png" alt="">
+          </div>
+          <div class="slide">
+            <img src="style/public/img/Slides/slide (2).png" alt="">
+          </div>
+          <div class="slide">
+            <img src="style/public/img/Slides/slide (3).png" alt="">
+          </div>
         </div>
-        <div class="menuFooter">
-          <nav class="">
-            <h1>Menu</h1>
-            <a href="#">INICIO</a>
-            <a href="#">LOJAS</a>
-            <a href="#">FORNECEDORES</a>
-            <a href="#">SOBRE NÓS</a>
-            <a href="#">NOVIDADES</a>
-            <a href="#">TRABALHE CONOSCO</a>
-          </nav>
-        </div>
-        <div class="contactsFooter">
-          <nav class="">
-            <h1>Contatos</h1>
-            <a href="">
-              <i class="fa-solid fa-phone"></i>
-              <span class="continuo"><span id="contatoFooter"></span>
-            </a>
-            <a href="">
-              <i class="fa-solid fa-envelope"></i>
-              <span class="continuo"><span id="emailFooter"></span>
-            </a>
-            <h2>Redes Sociais</h2>
-            <div class="SocialMediaFooter">
-              <a
-                href="https://www.instagram.com/norteautopecas_/"
-                target="_blank"
-              >
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <a href="https://www.facebook.com/norteautopecas" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/norte-auto-pe%C3%A7as"
-                target="_blank"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </section>
-    </div>
-    <div class="diretosReservadosFooter">
-        <p>&copy; Norte Auto Peças - Todos os direitos reservados.</p>
       </div>
-  </footer>
+    </div>
+    
+    
     
     
     
