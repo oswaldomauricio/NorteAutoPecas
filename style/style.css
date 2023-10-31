@@ -11,6 +11,44 @@
   --textHeader: #626262;
   --branco: #fff;
 }
+.topo{
+  width: 50px;
+  height: 50px;
+  background-color: #27ae60;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.irParaInicio i{
+  color: #fff;
+  font-size: 30px;
+}
+
+
+/* fonte padrao */
+.FonteMain div {
+  width: 240px;
+  height: 6px;
+  /* padding: 6px 240px; */
+  background-color: #ff0000;
+}
+
+.FonteMain h2 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0E007C;
+}
+
+/* <div class="FonteMain">
+      <h2>Nossas Lojas</h2>
+      <div></div>
+    </div> */
+
 
 /* Telas maiores que 1280px*/
 .container {
@@ -19,10 +57,12 @@
   max-width: 100%;
   max-height: 100%;
 }
+
 body {
   height: 100%;
   width: 100%;
 }
+
 /* Tela de Header Onde aparece as informações de contato*/
 .header {
   background-color: var(--HeaderFisrt);
@@ -46,6 +86,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .headerFirst p,
 i,
 a {
@@ -54,14 +95,17 @@ a {
   text-decoration: none;
   font-weight: normal;
 }
+
 .headerFirst a {
   display: flex;
   gap: 8px;
 }
+
 .headerFirst i {
   font-size: 20px;
 }
-.headerFirst > .SocialMedia i {
+
+.headerFirst>.SocialMedia i {
   font-size: 26px;
 }
 
@@ -76,37 +120,43 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.HeaderMainInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+.HeaderMainInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .LogoNorteAzul {
   width: 308px;
   height: 119px;
 }
-.HeaderMainInfo, .MenuHeader a{
-    color: var(--textHeader);
-    gap: 24px;
+
+.HeaderMainInfo,
+.MenuHeader a {
+  color: var(--textHeader);
+  gap: 24px;
 }
 
 /*NAV*/
 
-.MenuHeader a{
+.MenuHeader a {
   padding: 0 24px;
   font-weight: 600;
 }
-.MenuHeader a:hover{
+
+.MenuHeader a:hover {
   color: #00041F;
   text-decoration: underline;
 }
 
 /*Footer*/
-footer{
+footer {
   background-color: #00041F;
 }
-.footerMain{
+
+.footerMain {
   background-color: #00041F;
   margin: 80px 0 0 0;
   height: 700px;
@@ -115,70 +165,124 @@ footer{
 }
 
 
-.footerMain img{
+.footerMain img {
   width: 300px;
   margin: 80px 0 0 0;
 }
-.footerMain p{
+
+.footerMain p {
   width: 400px;
   text-align: justify;
   margin: 40px 0 0 0;
   color: #fff;
 }
-.menuFooter nav{
+
+.menuFooter nav {
   display: flex;
   flex-direction: column;
   margin: 80px 0 0 0;
 }
-.menuFooter nav a{
+
+.menuFooter nav a {
   color: #C3C3C3;
   padding: 36px 0 0 0;
   font-size: 16px;
 }
-.menuFooter nav a:hover{
-  color: #fff;
-}
-.menuFooter nav h1{
+
+.menuFooter nav a:hover {
   color: #fff;
 }
 
-.contactsFooter nav{
+.menuFooter nav h1 {
+  color: #fff;
+}
+
+.contactsFooter nav {
   display: flex;
   flex-direction: column;
   margin: 80px 0 0 0;
 }
-.contactsFooter span{
+
+.contactsFooter span {
   color: #C3C3C3;
 }
-.contactsFooter span:hover{
+
+.contactsFooter span:hover {
   color: #fff;
 }
-.contactsFooter nav a{
+
+.contactsFooter nav a {
   color: #C3C3C3;
   padding: 36px 0 0 0;
   font-size: 16px;
 }
-.contactsFooter nav h1, .contactsFooter nav h2{
+
+.contactsFooter nav h1,
+.contactsFooter nav h2 {
   color: #fff;
   font-size: 20px;
 }
-.contactsFooter nav h2{
+
+.contactsFooter nav h2 {
   margin: 35px 0 0 0;
 }
 
-.SocialMediaFooter i{
+.SocialMediaFooter i {
   font-size: 40px;
   padding: 25px 25px 0 0;
 }
-.SocialMediaFooter i:hover{
+
+.SocialMediaFooter i:hover {
   color: #e2e2e2;
 }
 
-.diretosReservadosFooter{
+.diretosReservadosFooter {
   background-color: #000212;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
+}
+
+/* Nossas Lojas */
+
+.NossasLojas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 125px 0 125px 0;
+  align-items: center;
+}
+
+.NossasLojas img {
+  width: 500px;
+}
+
+.NossasLojasAbout {
+  width: 600px;
+  margin: 0 0 0 100px;
+}
+
+.NossasLojasAbout h2 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0E007C;
+
+}
+
+.NossasLojasAbout p {
+  margin: 60px 0;
+  font-size: 20px;
+}
+
+.NossasLojasAbout a {
+  width: 325px;
+  background-color: #0e007c;
+  padding: 13px 60px;
+  border-radius: 10px;
+}
+
+.NossasLojasAbout a:hover {
+  background-color: #090054;
 }
