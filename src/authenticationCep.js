@@ -4,14 +4,14 @@ function ip(){
     function (localizacao) {
       var atualoc = localizacao["city"];
       if(atualoc == "Manaus"){
-        $("#emailHeader").html("Vendas@norteautopeças.com.br");
+        $("#emailHeader").html("vendas@norteautopeças.com.br");
         $("#contatoHeader").html("(92) 2129-1500");
         $("#emailFooter").html("Vendas@norteautopeças.com.br");
         $("#contatoFooter").html("(92) 2129-1500");
       } else if(atualoc == "Pará"){
-        $("#emailHeader").html("Vendas@norteautopeças.com.br");
+        $("#emailHeader").html("vendas@norteautopeças.com.br");
         $("#contatoHeader").html("(92) 2129-1500");
-        $("#emailFooter").html("Vendas201@norteautopeças.com.br");
+        $("#emailFooter").html("vendas201@norteautopeças.com.br");
         $("#contatoFooter").html("(95) 2129-1500");
       }
       

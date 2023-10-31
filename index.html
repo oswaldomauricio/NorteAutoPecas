@@ -12,11 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="src/slides.css">
+  <link rel="stylesheet" href="src/slideForn.css">
   <title>Norte Auto Peças | Inicio</title>
 </head>
 
 <body>
-  
+
   <section class="header">
     <div class="container">
       <div class="headerFirst">
@@ -52,7 +53,7 @@
           <img class="LogoNorteAzul" src="style/public/img/logosNorte/Logo-Grupo Norte2.png" alt="" /></a>
         <nav class="MenuHeader">
           <a href="#header">INICIO</a>
-          <a href="">LOJAS</a>
+          <a href="#LojasSecao">LOJAS</a>
           <a href="">FORNECEDORES</a>
           <a href="">SOBRE NÓS</a>
           <a href="">NOVIDADES</a>
@@ -65,7 +66,7 @@
   <!-- Slide da Pagina. -->
   <section class="secSlide">
     <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
-      css-mode="true">
+      css-mode="true" rewind="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
       <swiper-slide><img src="style/public/img/Slides/slideTest/slide1.png" alt=""></swiper-slide>
       <swiper-slide><img src="style/public/img/Slides/slideTest/slide2.png" alt=""></swiper-slide>
       <swiper-slide><img src="style/public/img/Slides/slideTest/slide3.png" alt=""></swiper-slide>
@@ -78,7 +79,7 @@
   <!-- Section Nossas Lojas -->
   <section class="LojasSecao">
     <div class="container">
-      <div class="NossasLojas">
+      <div class="NossasLojas" id="#LojasSecao">
         <img src="style/public/img/MapLojas/brazil.svg" alt="Mapa do Brasil">
         <div class="NossasLojasAbout">
           <div class="FonteMain">
@@ -95,6 +96,35 @@
     </div>
   </section>
 
+  <!-- secao de fornecedores -->
+  <section class="fornecedores">
+    <div class="container">
+      <div class="FonteMain titleFornecedores">
+        <h2>Fornecedores</h2>
+        <div></div>
+      </div>
+    </div>
+    <div class="fornecedoresCampo">
+      <div class="container">
+        <div class="fornImgs">
+          <swiper-container class="mySwiper" watch-slides-progress="true" slides-per-view="4" navigation="true" keyboard="true" mousewheel="true" rewind="true"
+          css-mode="true" >
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Sabo.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Eaton.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Mahle.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Skf.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Cinpal.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Schaeffler.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/SuporteRei.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/LNG.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Valeo.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Randon.png" alt=""></swiper-slide>
+          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/FreiosFarj.png" alt=""></swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -153,9 +183,9 @@
     </div>
   </footer>
 
-<div class="topo">
-  <a href="#" id="header" class="irParaInicio"><i class="fa-solid fa-arrow-up"></i></a>
-</div>
+  <div class="topo" id="header">
+    <a href="#" class="irParaInicio"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
 
 
 
@@ -167,6 +197,8 @@
   <script src="index.js" type="text/javascript"></script>
   <script src="src/authenticationCep.js" type="text/javascript"></script>
   <script src="src/slides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="src/slideForn.js"></script>
 </body>
 
 </html>
