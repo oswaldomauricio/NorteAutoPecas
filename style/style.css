@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  /* border: solid 1px red; */
 }
 
 :root {
@@ -11,10 +12,31 @@
   --textHeader: #626262;
   --branco: #fff;
 }
-.topo a{
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #fff;
+
+}
+
+*::-webkit-scrollbar {
+  width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.topo a {
   width: 50px;
   height: 50px;
-  background-color: #27ae60;
+  background-color: #277cae;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -24,7 +46,22 @@
   justify-content: center;
   align-items: center;
 }
-.irParaInicio i{
+
+.topoWhatsapp a {
+  width: 50px;
+  height: 50px;
+  background-color: #27ae60;
+  position: fixed;
+  bottom: 120px;
+  right: 40px;
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.irParaInicio i {
   color: #fff;
   font-size: 30px;
 }
@@ -255,7 +292,7 @@ footer {
 }
 
 .NossasLojas img {
-  width: 500px;
+  width: 600px;
 }
 
 .NossasLojasAbout {
@@ -286,12 +323,272 @@ footer {
   background-color: #090054;
 }
 
-.fornecedoresCampo{
+.fornecedoresCampo {
   background-image: url(public/img/Fornecedores/FundoFornecedores.svg);
   background-color: #cccccc;
   width: 100%;
   height: 500px;
+  margin: 0 0 80px 0;
 }
-.titleFornecedores{
+
+.mvv {
+  background-image: url(public/img/Fornecedores/FundoMVV.svg);
+  background-color: #00041F;
+  width: 100%;
+  height: 500px;
+  margin: 0 0 80px 0;
+  display: flex;
+  align-items: center;
+}
+
+.titleFornecedores {
   margin: 0 0 50px 0;
+}
+
+
+/* Sobre nos*/
+
+.sobre div {
+  width: 200px;
+}
+
+.campoSobreNos {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 80px 0;
+}
+
+.campoSobreNosText p {
+  width: 600px;
+  font-size: 18px;
+  margin: 0 0 22px 0;
+  font-weight: 500;
+}
+
+.campoSobreNosText a {
+  width: 325px;
+  background-color: #0e007c;
+  padding: 13px 60px;
+  border-radius: 10px;
+  margin: 30px 0 0 0;
+}
+
+
+/*Novidades*/
+.cardMvv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.cardMvv img {
+  width: 144px;
+}
+
+.cardMvv p {
+  width: 300px;
+  text-align: center;
+}
+
+.cardMvv h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.visao img {
+  width: 180px;
+  margin: 20px 0 20px 0;
+}
+
+.mvvCampo {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+
+}
+
+.noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 80px 0 40px 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+  height: 100%;
+  margin: 0 0 80px 20px;
+}
+
+.card a {
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+.card p {
+  font-size: 1.2rem;
+  max-width: 200pxpx;
+
+}
+
+.card img {
+  width: 300px;
+}
+
+.card i {
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+
+@media (max-width: 1150px) {
+  * {
+    .container {
+      margin: 0 auto;
+      width: 1000px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .campoSobreNosText p {
+      width: 400px;
+      font-size: 14px;
+      margin: 0 0 22px 0;
+    }
+
+    .NossasLojas img {
+      width: 400px;
+    }
+
+    .campoSobreNos {
+      justify-content: space-around;
+    }
+
+
+  }
+}
+
+@media (max-width: 1150px) {
+  * {
+    .container {
+      margin: 0 auto;
+      width: 1000px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .campoSobreNosText p {
+      width: 400px;
+      font-size: 14px;
+      margin: 0 0 22px 0;
+    }
+
+    .NossasLojas img {
+      width: 400px;
+    }
+
+    .campoSobreNos {
+      justify-content: space-around;
+    }
+
+    .headerMain {
+      width: 100%;
+      height: 144px;
+      background-color: var(--branco);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+
+    .noticias {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 80px 0 40px 0;
+    }
+
+    .alterarTamanhoSecond swiper-slide {
+      width: 200px;
+      height: 100%;
+    }
+
+    .cardMvv p {
+      width: 260px;
+      text-align: center;
+    }
+    .contactsFooter span {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    .container {
+      margin: 0 auto;
+      width: 800px;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .campoSobreNosText p {
+      width: 400px;
+      font-size: 14px;
+      margin: 0 0 22px 0;
+    }
+
+    .NossasLojas img {
+      width: 400px;
+    }
+
+    .campoSobreNos {
+      justify-content: space-around;
+    }
+
+    .headerMain {
+      width: 100%;
+      height: 144px;
+      background-color: var(--branco);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .NossasLojas {
+      display: flex;
+      flex-direction: column;
+    }
+    .NossasLojasAbout {
+      width: 600px;
+      margin: 0 0 0 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+    .noticias {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 80px 0 40px 0;
+    }
+
+    .alterarTamanhoSecond swiper-slide {
+      width: 200px;
+      height: 100%;
+    }
+
+    .cardMvv p {
+      width: 260px;
+      text-align: center;
+    }
+    .contactsFooter span {
+      font-size: 14px;
+    }
+  }
 }

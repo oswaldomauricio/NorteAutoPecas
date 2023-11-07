@@ -18,11 +18,11 @@
 
 <body>
 
-  <section class="header">
+  <section class="header" id="header">
     <div class="container">
       <div class="headerFirst">
         <div class="contacts">
-          <a href="">
+          <a href="#">
             <i class="fa-solid fa-envelope"></i>
             <span class="continuo"><span id="emailHeader"></span>
           </a>
@@ -46,7 +46,7 @@
     </div>
   </section>
   <!-- HeaderMain -->
-  <section class="headerMain" id="inicio">
+  <section class="headerMain">
     <div class="container">
       <div class="HeaderMainInfo">
         <a href="">
@@ -54,9 +54,9 @@
         <nav class="MenuHeader">
           <a href="#header">INICIO</a>
           <a href="#LojasSecao">LOJAS</a>
-          <a href="">FORNECEDORES</a>
-          <a href="">SOBRE NÓS</a>
-          <a href="">NOVIDADES</a>
+          <a href="#fornecedores">FORNECEDORES</a>
+          <a href="#sobreNos">SOBRE NÓS</a>
+          <a href="#novidades">NOVIDADES</a>
         </nav>
       </div>
     </div>
@@ -65,22 +65,24 @@
   <!-- Main - conteudo da pagina -->
   <!-- Slide da Pagina. -->
   <section class="secSlide">
-    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
-      css-mode="true" rewind="true" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-      <swiper-slide><img src="style/public/img/Slides/slideTest/slide1.png" alt=""></swiper-slide>
-      <swiper-slide><img src="style/public/img/Slides/slideTest/slide2.png" alt=""></swiper-slide>
-      <swiper-slide><img src="style/public/img/Slides/slideTest/slide3.png" alt=""></swiper-slide>
-      <swiper-slide><img src="style/public/img/Slides/slideTest/slide4.png" alt=""></swiper-slide>
+    <swiper-container class="mySwiper alterarTamanhoMain" navigation="true" pagination="true" keyboard="true"
+      mousewheel="true" css-mode="true" rewind="true" centered-slides="true" autoplay-delay="5000"
+      autoplay-disable-on-interaction="false">
+      <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide1.png" alt=""></swiper-slide>
+      <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide2.png" alt=""></swiper-slide>
+      <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide3.png" alt=""></swiper-slide>
+      <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide4.png" alt=""></swiper-slide>
+
 
     </swiper-container>
   </section>
   <!-- fim slide -->
 
   <!-- Section Nossas Lojas -->
-  <section class="LojasSecao">
+  <section class="LojasSecao" id="LojasSecao">
     <div class="container">
       <div class="NossasLojas" id="#LojasSecao">
-        <img src="style/public/img/MapLojas/brazil.svg" alt="Mapa do Brasil">
+        <a href="Manaus.html"><img src="style/public/img/MapLojas/brazil.png" alt="Mapa do Brasil"></a>
         <div class="NossasLojasAbout">
           <div class="FonteMain">
             <h2>Nossas Lojas</h2>
@@ -97,7 +99,7 @@
   </section>
 
   <!-- secao de fornecedores -->
-  <section class="fornecedores">
+  <section class="fornecedores" id="fornecedores">
     <div class="container">
       <div class="FonteMain titleFornecedores">
         <h2>Fornecedores</h2>
@@ -107,27 +109,183 @@
     <div class="fornecedoresCampo">
       <div class="container">
         <div class="fornImgs">
-          <swiper-container class="mySwiper" watch-slides-progress="true" slides-per-view="4" navigation="true" keyboard="true" mousewheel="true" rewind="true"
-          css-mode="true" >
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Sabo.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Eaton.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Mahle.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Skf.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Cinpal.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Schaeffler.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/SuporteRei.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/LNG.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Valeo.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/Randon.png" alt=""></swiper-slide>
-          <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/listaFornecedor/FreiosFarj.png" alt=""></swiper-slide>
+          <swiper-container class="mySwiper alterarTamanho" rewind="true" navigation="true" autoplay-delay="2500"
+            autoplay-disable-on-interaction="true">
+            <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn1.png"
+                alt="" /></swiper-slide>
+            <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn2.png"
+                alt="" /></swiper-slide>
+            <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn3.png"
+                alt="" /></swiper-slide>
+            <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn2.png"
+                alt="" /></swiper-slide>
+            <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn1.png"
+                alt="" /></swiper-slide>
           </swiper-container>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Sobre Nós -->
+  <section class="sobreNos" id="sobreNos">
+    <div class="container">
+      <div class="FonteMain sobre">
+        <h2>Sobre nós</h2>
+        <div></div>
+      </div>
+      <div class="campoSobreNos">
+        <swiper-container class="alterarTamanhoSecond" navigation="true" keyboard="true" mousewheel="true"
+          css-mode="true" keyboard="true" rewind="true" centered-slides="true" autoplay-delay="5000"
+          autoplay-disable-on-interaction="true" autoplay-disable-on-interaction="true">
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/102.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/103.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/104.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/105.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/106.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/107.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/108.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/109.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/110.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/111.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/112.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/114.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/115.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/201.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/202.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/203.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/204.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/205.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/206.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/207.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/301.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/302.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/303.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/401.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/402.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/501.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/502.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/503.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/601.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/701.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/802.png" alt=""></swiper-slide>
+          <swiper-slide><img src="style/public/img/FotoLoja/Lojas/901.png" alt=""></swiper-slide>
 
 
+        </swiper-container>
+        <div class="campoSobreNosText">
+          <p>A Norte Auto Peças atua a mais de 26 anos no ramo de venda de peças e pneus para veículos leves e pesados.
+            Sua matriz está localizada na cidade de Manaus no Amazonas. Hoje o grupo possui lojas em mais nove estados
+            da região norte, Acre, Amapá, Pará, Rondônia e Roraima, totalizando 34 lojas.</p>
+          <p>No início a empresa entendeu que esse era um ramo desafiador e com muitas oportunidades na região
+            amazônica. Com isso o fundador direcionou seus esforços para atender as demandas e necessidades dos seus
+            clientes, com a venda de peças e serviços especializados, dos mais variados fabricantes, sempre com
+            confiabilidade e atendimento de qualidade. </p>
+          <p>Decorridos mais de 26 anos, a Norte Auto Peças ocupa posição de destaque nos mercados onde atua,
+            reconhecida pelos clientes e fornecedores como uma empresa confiável e inovadora, com atendimento cortês e
+            ágil.</p>
+          <a href="Manaus.html">Conheça nossas lojas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missão Visao e Valores -->
+  <section class="mvv">
+    <div class="container">
+      <div class="mvvCampo">
+        <div class="cardMvv missao">
+          <img src="style/public/img/icons/rocket-missao.png" alt="Foguete">
+          <h2>Missão</h2>
+          <p>Na Norte Auto Peças, estamos comprometidos em ser a principal fonte de peças para linha pesada, oferecendo
+            qualidade inigualável e atendimento excepcional para impulsionar a confiança e o desempenho dos nossos
+            clientes.</p>
+        </div>
+        <div class="cardMvv visao">
+          <img src="style/public/img/icons/olhos-visao.png" alt="Foguete">
+          <h2>visão</h2>
+          <p>Nossa visão é ser reconhecida como a referência global em peças para linha pesada, elevando constantemente
+            os padrões da indústria por meio de inovação contínua e parcerias sólidas, mantendo nossa posição como
+            líderes do mercado.
+          </p>
+        </div>
+        <div class="cardMvv valores">
+          <img src="style/public/img/icons/mao-valores.png" alt="Foguete">
+          <h2>Valores</h2>
+          <p>Nossos valores fundamentais são qualidade intransigente, conhecimento especializado, parcerias confiáveis e
+            compromisso inabalável com nossos clientes e colaboradores, sustentando nosso papel como a escolha
+            preferencial no mercado de peças para linha pesada
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="novidades" id="novidades">
+    <div class="container">
+      <div class="FonteMain sobre">
+        <h2>Novidades</h2>
+        <div></div>
+      </div>
+      <div class="noticias">
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p>Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p >Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p >Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p >Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p maxLength="15">Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p>Titulo da noticia</p>
+            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
   <!--FIM SECTION NOSSAS LOJAS  -->
   <footer>
     <div class="container">
@@ -143,11 +301,11 @@
         <div class="menuFooter">
           <nav class="">
             <h1>Menu</h1>
-            <a href="#">INICIO</a>
-            <a href="#">LOJAS</a>
-            <a href="#">FORNECEDORES</a>
-            <a href="#">SOBRE NÓS</a>
-            <a href="#">NOVIDADES</a>
+            <a href="#header">INICIO</a>
+          <a href="#LojasSecao">LOJAS</a>
+          <a href="#fornecedores">FORNECEDORES</a>
+          <a href="#sobreNos">SOBRE NÓS</a>
+          <a href="#novidades">NOVIDADES</a>
             <a href="#">TRABALHE CONOSCO</a>
           </nav>
         </div>
@@ -183,8 +341,13 @@
     </div>
   </footer>
 
-  <div class="topo" id="header">
-    <a href="#" class="irParaInicio"><i class="fa-solid fa-arrow-up"></i></a>
+  <div class="topo">
+    <a href="#header" class="irParaInicio"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+  <div class="topoWhatsapp">
+    <a href="#" class="irParaInicio">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
   </div>
 
 
