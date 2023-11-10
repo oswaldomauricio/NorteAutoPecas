@@ -13,6 +13,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="src/slides.css">
   <link rel="stylesheet" href="src/slideForn.css">
+  <link rel="stylesheet" href="src/btnHeaderLojas.css">
   <title>Norte Auto Peças | Inicio</title>
 </head>
 
@@ -22,14 +23,14 @@
     <div class="container">
       <div class="headerFirst">
         <div class="contacts">
-          <a href="#">
-            <i class="fa-solid fa-envelope"></i>
-            <span class="continuo"><span id="emailHeader"></span>
-          </a>
-          <a href="">
-            <i class="fa-solid fa-phone"></i>
-            <span class="continuo"><span id="contatoHeader"></span>
-          </a>
+          <button class="btnHeaderLojas">
+            <a href="#">
+              <i class="fa-solid fa-angles-down"></i>
+              <span class="continuo">
+                Conheça nossas lojas
+              </span>
+            </a>
+          </button>
         </div>
         <div class="SocialMedia">
           <a href="https://www.facebook.com/norteautopecas" target="_blank">
@@ -45,11 +46,17 @@
       </div>
     </div>
   </section>
+  <div class="container">
+    <div class="lojasHeader">
+      <div id="containerDeLojas"></div>
+    </div>
+  </div>
+  
   <!-- HeaderMain -->
   <section class="headerMain">
     <div class="container">
       <div class="HeaderMainInfo">
-        <a href="">
+        <a href="#">
           <img class="LogoNorteAzul" src="style/public/img/logosNorte/Logo-Grupo Norte2.png" alt="" /></a>
         <nav class="MenuHeader">
           <a href="#header">INICIO</a>
@@ -59,15 +66,27 @@
           <a href="#novidades">NOVIDADES</a>
         </nav>
       </div>
-    </div>
+  </section>
+  <section class="headerMobile">
+    <div class="container">
+      <div class="HeaderMainInfo">
+        <a href="#">
+          <img class="LogoNorteAzul" src="style/public/img/logosNorte/Logo-Grupo Norte2.png" alt="" /></a>
+        <nav class="MenuHeader">
+          <a href="#header">INICIO</a>
+          <a href="#LojasSecao">LOJAS</a>
+          <a href="#fornecedores">FORNECEDORES</a>
+          <a href="#sobreNos">SOBRE NÓS</a>
+          <a href="#novidades">NOVIDADES</a>
+        </nav>
+      </div>
   </section>
 
   <!-- Main - conteudo da pagina -->
   <!-- Slide da Pagina. -->
   <section class="secSlide">
     <swiper-container class="mySwiper alterarTamanhoMain" navigation="true" pagination="true" keyboard="true"
-      mousewheel="true" css-mode="true" rewind="true" centered-slides="true" autoplay-delay="5000"
-      autoplay-disable-on-interaction="false">
+      mousewheel="false" css-mode="false" rewind="true" centered-slides="false" autoplay-delay="5000" loop="true">
       <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide1.png" alt=""></swiper-slide>
       <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide2.png" alt=""></swiper-slide>
       <swiper-slide class="imgMain"><img src="style/public/img/Slides/slideTest/slide3.png" alt=""></swiper-slide>
@@ -110,7 +129,7 @@
       <div class="container">
         <div class="fornImgs">
           <swiper-container class="mySwiper alterarTamanho" rewind="true" navigation="true" autoplay-delay="2500"
-            autoplay-disable-on-interaction="true">
+            autoplay-disable-on-interaction="true" loop="true">
             <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn1.png"
                 alt="" /></swiper-slide>
             <swiper-slide><img class="ImgFornecedor" src="style/public/img/Fornecedores/forn2.png"
@@ -233,43 +252,7 @@
           <a href="#">
             <img src="style/public/img/novidades/noticia1.png" alt="">
             <p>Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <span>00/00/2023</span>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <img src="style/public/img/novidades/noticia1.png" alt="">
-            <p >Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <span>00/00/2023</span>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <img src="style/public/img/novidades/noticia1.png" alt="">
-            <p >Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <span>00/00/2023</span>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <img src="style/public/img/novidades/noticia1.png" alt="">
-            <p >Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <span>00/00/2023</span>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="#">
-            <img src="style/public/img/novidades/noticia1.png" alt="">
-            <p maxLength="15">Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <span>00/00/2023</span>
           </a>
         </div>
@@ -278,7 +261,43 @@
           <a href="#">
             <img src="style/public/img/novidades/noticia1.png" alt="">
             <p>Titulo da noticia</p>
-            <a href="#">Leia mais  <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p>Titulo da noticia</p>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p>Titulo da noticia</p>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p maxLength="15">Titulo da noticia</p>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <span>00/00/2023</span>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="#">
+            <img src="style/public/img/novidades/noticia1.png" alt="">
+            <p>Titulo da noticia</p>
+            <a href="#">Leia mais <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             <span>00/00/2023</span>
           </a>
         </div>
@@ -302,10 +321,10 @@
           <nav class="">
             <h1>Menu</h1>
             <a href="#header">INICIO</a>
-          <a href="#LojasSecao">LOJAS</a>
-          <a href="#fornecedores">FORNECEDORES</a>
-          <a href="#sobreNos">SOBRE NÓS</a>
-          <a href="#novidades">NOVIDADES</a>
+            <a href="#LojasSecao">LOJAS</a>
+            <a href="#fornecedores">FORNECEDORES</a>
+            <a href="#sobreNos">SOBRE NÓS</a>
+            <a href="#novidades">NOVIDADES</a>
             <a href="#">TRABALHE CONOSCO</a>
           </nav>
         </div>
@@ -359,9 +378,10 @@
   <!-- Scripts da propria pagina -->
   <script src="index.js" type="text/javascript"></script>
   <script src="src/authenticationCep.js" type="text/javascript"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
   <script src="src/slides.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="src/slideForn.js"></script>
+  <script defer src="src/btnHeaderLojas.js"></script>
 </body>
 
 </html>

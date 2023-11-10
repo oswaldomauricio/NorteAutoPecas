@@ -33,7 +33,12 @@
   border: 2px solid #fff;
 }
 
+.topo {
+  z-index: 10;
+}
+
 .topo a {
+  z-index: 10;
   width: 50px;
   height: 50px;
   background-color: #277cae;
@@ -59,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .irParaInicio i {
@@ -114,7 +120,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  display: flex;
   justify-content: center;
 }
 
@@ -147,7 +152,9 @@ a {
 }
 
 /*Header*/
-
+.headerMobile{
+  display: none;
+}
 .headerMain {
   width: 100%;
   height: 144px;
@@ -163,6 +170,14 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu a {
+  display: none;
 }
 
 .LogoNorteAzul {
@@ -196,7 +211,7 @@ footer {
 .footerMain {
   background-color: #00041F;
   margin: 80px 0 0 0;
-  height: 600px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -521,6 +536,7 @@ footer {
       width: 260px;
       text-align: center;
     }
+
     .contactsFooter span {
       font-size: 14px;
     }
@@ -542,8 +558,21 @@ footer {
       margin: 0 0 22px 0;
     }
 
-    .NossasLojas img {
-      width: 400px;
+    .FonteMain {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .NossasLojas p,
+    a {
+      text-align: center;
+    }
+
+    .titleFornecedores {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .campoSobreNos {
@@ -551,26 +580,73 @@ footer {
     }
 
     .headerMain {
-      width: 100%;
-      height: 144px;
-      background-color: var(--branco);
+      display: none;
+    }
+    .headerMobile{
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    }
+    .LogoNorteAzul{
+      width: 180px;
+      height: 100px;
+      padding: 10px 0;
+    }
+
+    .HeaderMainInfo nav {
+      display: none;
+    }
+
+    .mobileMenuIcon {
+      display: flex;
+    }
+
+    .mobileMenu a {
+      color: #000;
+      display: flex;
+      padding: 1.2rem 1.2rem;
+      justify-content: end;
+      width: 50%;
+      background-color: #090054;
+      position: relative;
+      color: #fff;
+      font-size: 18px;
+      z-index: 100;
+      left: 480px;
+      font-weight: 600;
+    }
+
+    .mobileMenu a:hover {
+      color: #fff;
+      background-color: #0c0269;
+    }
+
+    .open {
+      display: none;
+    }
+
+    .mobileMenuIcon button {
+      background-color: transparent;
+      color: #090054;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobileMenuIcon button i {
+      color: #090054;
+      font-size: 32px;
     }
 
     .NossasLojas {
       display: flex;
       flex-direction: column;
     }
+
     .NossasLojasAbout {
       width: 600px;
-      margin: 0 0 0 100px;
+      margin: 0 0 0 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-  }
+    }
 
     .noticias {
       display: grid;
@@ -587,8 +663,55 @@ footer {
       width: 260px;
       text-align: center;
     }
+
     .contactsFooter span {
       font-size: 14px;
     }
+
+    .campoSobreNos {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .campoSobreNosText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .campoSobreNosText p {
+      text-align: center;
+      width: 600px;
+    }
+
+    .campoSobreNosText a {
+      text-align: center;
+      margin: 40px 0 40px 0;
+    }
+    .aboutNorte{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .aboutNorte p{
+      text-align: center;
+    }
+    .footerMain {
+      flex-direction: column;
+      align-items: center;
+    }
+    .menuFooter{
+      display: none;
+    }
+
+    .contactsFooter nav h1,
+    .contactsFooter nav h2, .SocialMediaFooter{
+      text-align: center;
+    }
+    .SocialMediaFooter{
+      margin: 0 0 40px 0;
+    }
+    
   }
 }

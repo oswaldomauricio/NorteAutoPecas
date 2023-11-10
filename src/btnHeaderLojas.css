@@ -1,0 +1,93 @@
+.btnHeaderLojas  {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    
+}
+
+.cardLojas {
+    /* position: absolute; */
+    /* left: 350px; */
+    width: 600px;
+    z-index: 100;
+    box-shadow: 0 5px 10px 0px;
+}
+.lojasHeader{
+    position: absolute;
+    z-index: 101;
+}
+.containerDeLojas{
+    position: relative;
+}
+
+.cardLojasCampo {
+    display: flex;
+    padding: 16px;
+    background-color: #fff;
+    border-bottom: 3px solid #0E007C;
+    color: #000;
+}
+.cardLojasCampo:hover {
+    background-color: #DBDBDB;
+    border-bottom: 3px solid #1602ac;
+    cursor: pointer;
+}
+
+.cardLojasCampo img {
+    width: 130px;
+    height: 110px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.cardLojasInformacao {
+    padding: 0 24px;
+}
+
+.cardLojasCampo h1,
+.cardLojasInformacao span {
+    padding: 0 0 16px 0;
+}
+
+.cardlojasContatos {
+    padding: 16px 0 0 0;
+}
+
+.cardLojasInformacao h1 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.cardLojasInformacao span {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cardlojasContatos {
+    display: flex;
+
+}
+
+.cardlojasContatos span {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    color: #0E007C;
+    padding: 0 10px;
+}
+.cardlojasContatos i {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1FAF38;
+}
+
+.close{
+    display: none;
+}
+.open{
+    display: block;
+}
