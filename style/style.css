@@ -791,7 +791,7 @@ footer {
     }
 
     .HeaderMainInfo nav {
-      display: flex;
+      display: none;
       flex-direction: column;
     }
 
