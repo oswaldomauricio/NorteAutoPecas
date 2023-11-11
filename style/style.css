@@ -808,7 +808,7 @@ footer {
 
     @media (max-width: 375px) {
       .container {
-        width: 365px;
+        width: 350px;
       }
 
       .alterarTamanho img {
