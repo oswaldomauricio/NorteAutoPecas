@@ -187,19 +187,33 @@ a {
 }
 
 .HeaderMainInfo,
-.MenuHeader a {
+.menuHeader a {
+  color: var(--textHeader);
+  gap: 24px;
+}
+.HeaderMainInfo,
+.menuHeaderMain a {
   color: var(--textHeader);
   gap: 24px;
 }
 
 /*NAV*/
 
-.MenuHeader a {
+.menuHeader a {
+  padding: 0 24px;
+  font-weight: 600;
+}
+.menuHeaderMain a {
   padding: 0 24px;
   font-weight: 600;
 }
 
-.MenuHeader a:hover {
+.menuHeader a:hover {
+  border-bottom: 2px solid #00041F;
+  color: #090054;
+  ;
+}
+.menuHeaderMain a:hover {
   border-bottom: 2px solid #00041F;
   color: #090054;
   ;
@@ -461,32 +475,7 @@ footer {
   color: #ff0000;
 }
 
-@media (max-width: 1150px) {
-  * {
-    .container {
-      margin: 0 auto;
-      width: 1000px;
-      max-width: 100%;
-      max-height: 100%;
-    }
 
-    .campoSobreNosText p {
-      width: 400px;
-      font-size: 14px;
-      margin: 0 0 22px 0;
-    }
-
-    .NossasLojas img {
-      width: 400px;
-    }
-
-    .campoSobreNos {
-      justify-content: space-around;
-    }
-
-
-  }
-}
 
 @media (max-width: 1150px) {
   * {
@@ -581,62 +570,73 @@ footer {
       justify-content: space-around;
     }
 
+    /*menu header computador*/
     .headerMain {
       display: none;
     }
 
+    /*menu header celular*/
+    
     .headerMobile {
       display: flex;
+      justify-content: space-between;
+      flex-direction: column;
     }
 
-    .LogoNorteAzul {
-      width: 180px;
-      height: 100px;
-      padding: 10px 0;
+    .headerMobile i {
+      padding: 0 0 0 50px;
     }
 
-    .HeaderMainInfo nav {
-      display: none;
+    .headerMobile img {
+      width: 130px;
+      height: 75px;
+    }
+
+    .HeaderMainInfoMobile {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
 
     .mobileMenuIcon {
       display: flex;
     }
 
-    .mobileMenu a {
-      color: #000;
-      display: flex;
-      padding: 1.2rem 1.2rem;
-      justify-content: end;
-      width: 50%;
-      background-color: #090054;
-      position: relative;
-      color: #fff;
-      font-size: 18px;
-      z-index: 100;
-      left: 480px;
-      font-weight: 600;
-    }
-
-    .mobileMenu a:hover {
-      color: #fff;
-      background-color: #0c0269;
-    }
-
-    .open {
-      display: none;
-    }
-
-    .mobileMenuIcon button {
-      background-color: transparent;
-      color: #090054;
-      border: none;
+    .mobileMenuIcon i {
+      color: #0E007C;
+      font-size: 32px;
       cursor: pointer;
     }
 
-    .mobileMenuIcon button i {
-      color: #090054;
-      font-size: 32px;
+    .menuHeader {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      z-index: 10;
+      top: 128px;
+      background-color: #fff;
+      align-items: end;
+      width: 100%;
+    }
+
+    .menuHeader a {
+      padding: 20px 20px;
+      width: 100vw;
+      justify-content: end;
+    }
+
+    .close {
+      display: none;
+    }
+
+
+    /*fim menu header celular*/
+    .LogoNorteAzul {
+      padding: 10px 0;
+    }
+
+    .HeaderMainInfo nav {
+      display: none;
     }
 
     .NossasLojas {
@@ -786,9 +786,6 @@ footer {
       grid-template-columns: 1fr;
     }
 
-    .headerMobile {
-      display: flex;
-    }
 
     .HeaderMainInfo nav {
       display: none;
@@ -807,10 +804,6 @@ footer {
     }
 
     @media (max-width: 450px) {
-      * {
-        overflow-x: hidden;
-      }
-
       .container {
         width: 350px;
       }
