@@ -13,7 +13,7 @@
   --branco: #fff;
 }
 
-* {
+/* * {
   scrollbar-width: thin;
   scrollbar-color: #000 #fff;
 
@@ -24,14 +24,14 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #fff;
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #000;
   border-radius: 20px;
   border: 2px solid #fff;
-}
+} */
 
 .topo {
   z-index: 10;
@@ -806,10 +806,11 @@ footer {
       width: 85%;
     }
 
-    @media (max-width: 375px) {
-      *{
+    @media (max-width: 450px) {
+      * {
         overflow-x: hidden;
       }
+
       .container {
         width: 320px;
       }
