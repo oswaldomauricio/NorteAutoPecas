@@ -787,4 +787,15 @@ footer {
     }
 
   }
+  @media (max-width: 500px) {
+    .container {
+      width: 365px;
+    }
+    .alterarTamanho img {
+      width: 85%;
+  }
+
+  
+
+  }
 }
