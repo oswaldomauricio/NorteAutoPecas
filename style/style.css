@@ -822,14 +822,15 @@ footer {
       .NossasLojas img {
         width: 320px;
       }
+
       .footerMain p {
         width: 320px;
         margin: 40px 0 0 0;
         color: #fff;
-    }
+      }
 
       .campoSobreNosText p {
-        width: 320px;
+        width: 300px;
       }
 
       .alterarTamanhoSecond img {
@@ -841,14 +842,16 @@ footer {
         max-width: 320px;
         max-height: 320px;
       }
+
       .footerMain p {
-        width: 320px;
+        width: 280px;
         margin: 40px 0 0 0;
         color: #fff;
-    }
-    .NossasLojasAbout{
-      width: 320px;
-    }
+      }
+
+      .NossasLojasAbout {
+        width: 320px;
+      }
 
     }
   }
