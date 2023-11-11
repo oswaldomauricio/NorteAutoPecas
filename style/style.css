@@ -200,8 +200,9 @@ a {
 }
 
 .MenuHeader a:hover {
-  color: #00041F;
-  text-decoration: underline;
+  border-bottom: 2px solid #00041F;
+  color: #090054;
+  ;
 }
 
 /*Footer*/
@@ -771,31 +772,84 @@ footer {
       width: 450px;
     }
 
-    .alterarTamanhoSecond  img{
+    .alterarTamanhoSecond img {
       width: 450px;
       height: 450px;
     }
-    .noticias{
+
+    .alterarTamanhoSecond {
+      max-width: 450px;
+      max-height: 450px;
+    }
+
+    .noticias {
       grid-template-columns: 1fr;
     }
-    .headerMobile{
+
+    .headerMobile {
       display: flex;
     }
+
     .HeaderMainInfo nav {
       display: flex;
       flex-direction: column;
     }
 
   }
+
   @media (max-width: 500px) {
     .container {
       width: 365px;
     }
+
     .alterarTamanho img {
       width: 85%;
-  }
+    }
 
-  
+    @media (max-width: 375px) {
+      .container {
+        width: 365px;
+      }
 
+      .alterarTamanho img {
+        width: 85%;
+      }
+
+      .NossasLojasAbout p {
+        width: 320px;
+      }
+
+      .NossasLojas img {
+        width: 320px;
+      }
+      .footerMain p {
+        width: 320px;
+        margin: 40px 0 0 0;
+        color: #fff;
+    }
+
+      .campoSobreNosText p {
+        width: 320px;
+      }
+
+      .alterarTamanhoSecond img {
+        width: 320px;
+        height: 320px;
+      }
+
+      .alterarTamanhoSecond {
+        max-width: 320px;
+        max-height: 320px;
+      }
+      .footerMain p {
+        width: 320px;
+        margin: 40px 0 0 0;
+        color: #fff;
+    }
+    .NossasLojasAbout{
+      width: 320px;
+    }
+
+    }
   }
 }
