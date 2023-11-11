@@ -807,6 +807,9 @@ footer {
     }
 
     @media (max-width: 375px) {
+      *{
+        overflow-x: hidden;
+      }
       .container {
         width: 320px;
       }
