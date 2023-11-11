@@ -834,13 +834,13 @@ footer {
       }
 
       .alterarTamanhoSecond img {
-        width: 320px;
-        height: 320px;
+        width: 300px;
+        height: 300px;
       }
 
       .alterarTamanhoSecond {
-        max-width: 320px;
-        max-height: 320px;
+        max-width: 300px;
+        max-height: 300px;
       }
 
       .footerMain p {
@@ -850,7 +850,7 @@ footer {
       }
 
       .NossasLojasAbout {
-        width: 320px;
+        width: 300px;
       }
 
     }
