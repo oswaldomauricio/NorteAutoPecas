@@ -12,6 +12,15 @@ html,
       padding: 0;
     }
 
+    .teste{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+      color: red;
+      font-size: 80px;
+    }
+
 
     .alterarTamanhoMain img{
       width: 100%;
@@ -70,5 +79,12 @@ html,
       stroke-dasharray: 125.6;
       transform: rotate(-90deg);
     }
+
+    .btnHeaderLojas  {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  
 
     

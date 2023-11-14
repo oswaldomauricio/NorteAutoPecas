@@ -9,7 +9,9 @@
     /* left: 350px; */
     width: 600px;
     z-index: 100;
-    box-shadow: 0 5px 10px 0px;
+    box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
+    -webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
+    -moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
 }
 .lojasHeader{
     position: absolute;

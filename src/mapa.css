@@ -1,0 +1,210 @@
+body{
+  max-height: 10000px;
+}
+
+svg {
+  width: 50%;
+}
+
+#AM,
+#AP,
+#RO,
+#PA,
+#RR,
+#MG,
+#MA,
+#AC,
+#BA {
+  fill: #141F58;
+}
+
+#AM:hover,
+#AP:hover,
+#RO:hover,
+#PA:hover,
+#RR:hover,
+#MG:hover,
+#MA:hover,
+#AC:hover,
+#BA:hover {
+  fill: #1d308d;
+}
+
+.nordeste,
+.sul,
+.centro-oeste,
+.sudeste {
+  fill: #3355D0;
+}
+
+path {
+  fill: #3355D0;
+  stroke: white;
+  stroke-width: 1px;
+}
+
+path:hover {
+  fill: rgb(189, 189, 189);
+  stroke: rgb(255, 255, 255);
+  stroke-width: 3px;
+}
+
+.tooltip {
+  pointer-events: none;
+  position: absolute;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  padding: 0px 15px;
+  z-index: 5;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  color: #21669e;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip.active {
+  display: block;
+}
+
+.tooltip:after {
+  content: url(../style/public/icons/mao-valores.png) !important;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+
+.secMap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+
+
+
+.btnHeaderLojas {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/**/
+
+.mapa {
+  margin-top: 40px;
+  height: 100%;
+}
+
+.FonteMain {
+  margin: 0 0 10px 0;
+}
+.FonteMain p{
+  padding: 20px 0 0;
+}
+
+footer {
+  margin: 200px 0 0 0;
+}
+
+.secCard {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 800px;
+  margin: 0 0 100px 0;
+  overflow-y: scroll;
+}
+.secCard {
+  scrollbar-width: thin;
+  scrollbar-color: #fff #141414;
+
+}
+
+.secCard::-webkit-scrollbar {
+  width: 9px;
+}
+
+.secCard::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.secCard::-webkit-scrollbar-thumb {
+  background-color: #141414;
+  border-radius: 20px;
+  border: 2px solid #141414;
+}
+
+
+.cardMapa {
+  display: flex;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.cardMapa:hover {
+  background-color: #f0f0f0;
+}
+
+.cardLojasInformacao {
+  padding: 0 16px;
+}
+
+.cardLojasInformacao h2 {
+  color: #00041F;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.cardLojasInformacao h2 {
+  padding: 0 0 10px 0;
+}
+
+.title {
+  padding: 0 0 10px 0;
+}
+
+.cardLoja {
+  display: flex;
+  flex-direction: column
+}
+
+.cardLoja img {
+  width: 140px;
+  height: 120px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.cardLojasContatos {
+  display: flex;
+  padding: 12px 0;
+}
+
+.cardLojasContatos span {
+  display: flex;
+  padding: 0 20px 0 0;
+  color: #0E007C;
+}
+
+.cardLojasContatos i {
+  color: #60D669;
+  font-size: 20px;
+  padding: 0 10px 0 0;
+}

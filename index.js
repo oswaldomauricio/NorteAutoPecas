@@ -24,5 +24,6 @@ document.querySelectorAll('.menuHeader a').forEach(item => {
         iconCloseMobile.style.display = "none"
         iconOpenMobile.style.display = "flex"
     });
+    
 });
 
