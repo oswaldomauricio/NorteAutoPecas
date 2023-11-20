@@ -1,14 +1,13 @@
-body {
-    font-family: sans-serif;
-    background-color: #fff;
-    margin: 0 auto;
-}
+
+svg {
+    /* width: 50%; */
+  }
 
 #svg-map {
     cursor: pointer;
 }
 
-#svg-map .circle, #svg-map path {
+#svg-map ,#svg-map path {
     fill: #3355D0;
 }
 
@@ -19,11 +18,14 @@ body {
 #container {
     display: flex;
     justify-content: center;
-
+    margin: 0 auto;
+    align-items: center;
 }
 .secaoLojas{
     display: flex;
     flex-direction: column-reverse;
+    margin: 0 0 0 100px;
+
 }
 .cardMapa span{
     display: flex;
@@ -63,4 +65,8 @@ body {
 #Acre path:hover,
 #Bahia path:hover{
   fill: #1d308d;
+}
+
+#Mato:hover{
+    fill: red;
 }

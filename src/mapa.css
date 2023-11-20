@@ -6,55 +6,12 @@ body{
 
 }
 
-svg {
-  width: 50%;
+.container {
+  margin: 0 auto;
+  width: 1180px;
+  max-width: 100%;
+  max-height: 100%;
 }
-
-#AM,
-#AP,
-#RO,
-#PA,
-#RR,
-#MG,
-#MA,
-#AC,
-#BA {
-  fill: #141F58;
-}
-
-#AM:hover,
-#AP:hover,
-#RO:hover,
-#PA:hover,
-#RR:hover,
-#MG:hover,
-#MA:hover,
-#AC:hover,
-#BA:hover {
-  fill: #1d308d;
-}
-
-#text {
-  width: 350px;
-  height: auto;
-  text-align: left;
-  color: black;
-  text-shadow: 1px 1px 1px #FFFFFF;
-}
-.nordeste,
-.sul,
-.centro-oeste,
-.sudeste {
-  fill: #3355D0;
-}
-
-path {
-  fill: #3355D0;
-  stroke: white;
-  stroke-width: 1px;
-}
-
-
 .secMap {
   display: flex;
   flex-direction: row;
