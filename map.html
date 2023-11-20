@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/styleMap.css">
+  <link rel="stylesheet" href="src/mapa.css">
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/icon/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css" />
+  <link rel="shortcut icon" href="favicon/logo-norte-favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="src/slides.css">
+  <link rel="stylesheet" href="src/slideForn.css">
+  <link rel="stylesheet" href="src/btnHeaderLojas.css">
+  <!-- Primary Meta Tags -->
+  <title>Norte Auto Peças — A melhor qualidade de produtos para linha pesada.</title>
+  <meta name="title" content="Norte Auto Peças" />
+  <meta name="description"
+    content="Empresa destinada a venda de peças para linha pesada e leve, com mais de 9 estados em todo Brasil. Venha nos conhecer." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://metatags.io/" />
+  <meta property="og:title" content="Norte Auto Peças — A melhor qualidade de produtos para linha pesada." />
+  <meta property="og:description"
+    content="Empresa destinada a venda de peças para linha pesada e leve, com mais de 9 estados em todo Brasil. Venha nos conhecer." />
+  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://metatags.io/" />
+  <meta property="twitter:title" content="Norte Auto Peças — A melhor qualidade de produtos para linha pesada." />
+  <meta property="twitter:description"
+    content="Empresa destinada a venda de peças para linha pesada e leve, com mais de 9 estados em todo Brasil. Venha nos conhecer." />
+  <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+  <title>Norte Auto Peças | Lojas</title>
+</head>
+
+<body>
+  <section class="header" id="header">
+    <div class="container">
+      <div class="headerFirst">
+        <div class="contacts">
+          <button class="btnHeaderLojas">
+            <a href="#">
+              <i class="fa-solid fa-angles-down"></i>
+              <span class="continuo">
+                Conheça nossas lojas
+              </span>
+            </a>
+          </button>
+        </div>
+        <div class="SocialMedia">
+          <a href="https://www.facebook.com/norteautopecas" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/norteautopecas_/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/norte-auto-pe%C3%A7as" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="lojasHeader">
+      <div id="containerDeLojas"></div>
+    </div>
+  </div>
+
+  <!-- HeaderMain -->
+  <section class="headerMain">
+    <div class="container">
+      <div class="HeaderMainInfo">
+        <a href="#">
+          <img class="LogoNorteAzul" src="style/public/img/logosNorte/Logo-Grupo Norte2.png" alt="" /></a>
+        <nav class="menuHeaderMain">
+          <a href="index.html">INICIO</a>
+          <a href="#LojasSecao">LOJAS</a>
+          <a href="#fornecedores">FORNECEDORES</a>
+          <a href="#sobreNos">SOBRE NÓS</a>
+          <a href="#novidades">NOVIDADES</a>
+        </nav>
+      </div>
+  </section>
+
+  <section class="headerMobile">
+    <div class="container">
+      <div class="HeaderMainInfoMobile">
+        <a href="#">
+          <img class="LogoNorteAzul" src="style/public/img/logosNorte/Logo-Grupo Norte2.png" alt="" />
+        </a>
+        <div class="mobileMenuIcon" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+    </div>
+    <nav class="menuHeader">
+      <a href="#header">INICIO</a>
+      <a href="#LojasSecao">LOJAS</a>
+      <a href="#fornecedores">FORNECEDORES</a>
+      <a href="#sobreNos">SOBRE NÓS</a>
+      <a href="#novidades">NOVIDADES</a>
+    </nav>
+  </section>
+
+  <!-- seção dos mapas -->
+  <div id="container">
+    <section class="selecionarLojas">
+      <img src="brasil.svg" onload="fetchSvg(this)" />
+      <div class="secaoLojas">
+        <div class="mapaFull" id="mapaFull">
+          <div class="cardTemplate">
+            <div class="cardMapa">
+              <img class="imgCard" src="" alt="">
+              <div class="cardLojasInformacao">
+                <h2 class="nomeLoja"></h2>
+                <span class="enderecoLoja"></span>
+                <span class="email"></span>
+                <div class="cardLojasContatos">
+                  <span><i class="fa-brands fa-whatsapp"><span class="whatsapp"></span></i></span>
+                  <span><i class="fa-solid fa-phone"><span class="telefone"></span></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="text">
+          <h1 id="stateName"></h1>
+          <h3 id="statePop"></h3>
+          <p id="stateDesc"></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="topo">
+      <a href="#header" class="irParaInicio"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <div class="topoWhatsapp">
+      <a href="https://api.whatsapp.com/send/?phone=559284179810&text&type=phone_number&app_absent=0" target="_blank"
+        class="irParaInicio">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+      <section class="footerMain">
+        <div class="aboutNorte">
+          <img src="style/public/img/logosNorte/Logo Grupo Norte (Branca).png" alt="Logo de todos os grupos da empresa">
+          <p>
+            A Norte Auto Peças tem mais de 27 anos de experiência no setor de autopeças, com 36 lojas nas regiões Norte,
+            Nordeste e Sudeste. Fundada com foco na região amazônica, prioriza confiabilidade e qualidade no
+            atendimento. Atualmente, é reconhecida como uma empresa confiável e inovadora nos mercados em que atua.
+          </p>
+        </div>
+        <div class="menuFooter">
+          <nav class="">
+            <h1>Menu</h1>
+            <a href="index.html">INICIO</a>
+            <a href="#LojasSecao">LOJAS</a>
+            <a href="#fornecedores">FORNECEDORES</a>
+            <a href="#sobreNos">SOBRE NÓS</a>
+            <a href="#novidades">NOVIDADES</a>
+            <a href="#">TRABALHE CONOSCO</a>
+          </nav>
+        </div>
+        <div class="contactsFooter">
+          <nav class="">
+            <h1>Contatos</h1>
+            <a href="">
+              <i class="fa-solid fa-phone"></i>
+              <span class="continuo"><span id="contatoFooter"></span>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-envelope"></i>
+              <span class="continuo"><span id="emailFooter"></span>
+            </a>
+            <h2>Redes Sociais</h2>
+            <div class="SocialMediaFooter">
+              <a href="https://www.instagram.com/norteautopecas_/" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://www.facebook.com/norteautopecas" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/norte-auto-pe%C3%A7as" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </div>
+    <div class="diretosReservadosFooter">
+      <p>&copy; Norte Auto Peças - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="src/scriptMap.js"></script>
+  <script src="https://kit.fontawesome.com/abb3096af1.js" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById('brasilSvg').addEventListener('load', function () {
+      // Chama a função fetchSvg quando a imagem é carregada com sucesso
+      fetchSvg(this);
+    });
+
+  </script>
+</body>
+
+</html>

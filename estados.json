@@ -1,0 +1,498 @@
+[
+    {
+        "code": "1",
+        "nome": "Acre",
+        "sigla": "AC",
+        "lojas": [
+            {
+                "codeLoja": 107,
+                "nomeLoja": "Norte - Rio Branco 1",
+                "enderecoLoja": "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM",
+                "imgLoja": "style/public/img/FotoLoja/107/107.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 111,
+                "nomeLoja": "Norte - Rio Branco 2",
+                "enderecoLoja": "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM",
+                "imgLoja": "style/public/img/FotoLoja/111/111.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "2",
+        "nome": "Alagoas",
+        "sigla": "AL",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "3",
+        "nome": "Amapá",
+        "sigla": "AP",
+        "lojas": [
+            {
+                "codeLoja": 204,
+                "nomeLoja": "Sudeste - Macapá",
+                "enderecoLoja": "Rua Tancredo Neves, 1919, Bairro São Lazaro - CEP: 68908-530",
+                "imgLoja": "style/public/img/FotoLoja/204/204.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+        
+    },
+    {
+        "code": "4",
+        "nome": "Amazonas",
+        "sigla": "AM",
+        "lojas": [
+            {
+                "codeLoja": 101,
+                "nomeLoja": "Norte - Torquato Tapajos",
+                "enderecoLoja": "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM",
+                "imgLoja": "style/public/img/FotoLoja/101/101.jpg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 102,
+                "nomeLoja": "Norte - Autaz Mirim",
+                "enderecoLoja": "Av. Autaz Mirim, 6927, Bairro Tancredo Neves - CEP: 69087-215",
+                "imgLoja": "style/public/img/FotoLoja/102/102.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 104,
+                "nomeLoja": "Norte - Camapuã",
+                "enderecoLoja": "Av. Camapuã, CJ. Nossa Sra. de Fatima, 2434-H, Cidade Nova - CEP: 69097-720",
+                "imgLoja": "style/public/img/FotoLoja/104/104.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 108,
+                "nomeLoja": "Norte - Silves",
+                "enderecoLoja": "Av. Silves Galpão 2, n° 857, Bairro Crespo - CEP: 69068-010",
+                "imgLoja": "style/public/img/FotoLoja/108/108.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 110,
+                "nomeLoja": "Norte - Piorini",
+                "enderecoLoja": "Av. José Henrique B. Rodrigues, n° 3269, Santa Etelvina - CEP: 69059-800",
+                "imgLoja": "style/public/img/FotoLoja/110/110.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 301,
+                "nomeLoja": "Norte - Flores",
+                "enderecoLoja": "Av. Governador José Lindoso",
+                "imgLoja": "style/public/img/FotoLoja/301/301.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 302,
+                "nomeLoja": "Norte - Piorini 2",
+                "enderecoLoja": "Av. José Henrique B. Rodrigues, n° 2202, Colonia Terra Nova - CEP: 69015-688",
+                "imgLoja": "style/public/img/FotoLoja/302/302.jpg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 402,
+                "nomeLoja": "Norte - Piorini 3",
+                "enderecoLoja": "Av. José Henrique B. Rodrigues, n° 3177, Santa Etelvina - CEP: 69059-800",
+                "imgLoja": "style/public/img/FotoLoja/402/402.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 403,
+                "nomeLoja": "Norte - Cidade de Deus",
+                "enderecoLoja": "Em Breve",
+                "imgLoja": "",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "5",
+        "nome": "Bahia",
+        "sigla": "BA",
+        "lojas": [
+            {
+                "codeLoja": 701,
+                "nomeLoja": "Norte - Vitoria da Conquista",
+                "enderecoLoja": "Av. Presidente Dutra, n° 1880, Bairro Brasil - CEP: 45051-030",
+                "imgLoja": "style/public/img/FotoLoja/701/701.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "6",
+        "nome": "Ceará",
+        "sigla": "CE",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "7",
+        "nome": "Distrito Federal",
+        "sigla": "DF",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "8",
+        "nome": "Espírito Santo",
+        "sigla": "ES",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "9",
+        "nome": "Goiás",
+        "sigla": "GO",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "10",
+        "nome": "Maranhão",
+        "sigla": "MA",
+        "lojas": [
+            {
+                "codeLoja": 501,
+                "nomeLoja": "Norte - Imperatriz",
+                "enderecoLoja": "Rod. BR 010 KM 1352, SN, Coco Grande - CEP: 65909-170",
+                "imgLoja": "style/public/img/FotoLoja/501/501.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 502,
+                "nomeLoja": "Norte - Balsas",
+                "enderecoLoja": "Av. Governador Luiz Rocha, SN, Setor Industrial Q° 179 - CEP: 65800-000",
+                "imgLoja": "style/public/img/FotoLoja/502/502.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 503,
+                "nomeLoja": "Norte - São Luis",
+                "enderecoLoja": "Rod. BR 135 KM 04, Av. Eng. Emiliano Maciera, n° 03, Bairro Tibiri - CEP: 65095-601",
+                "imgLoja": "style/public/img/FotoLoja/503/503.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "11",
+        "nome": "Mato Grosso",
+        "sigla": "MT",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "12",
+        "nome": "Mato Grosso do Sul",
+        "sigla": "MS",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "13",
+        "nome": "Minas Gerais",
+        "sigla": "MG",
+        "lojas": [
+            {
+                "codeLoja": 901,
+                "nomeLoja": "Norte - Contagem",
+                "enderecoLoja": "ROD. BR 040, n° 6481, Presidente Kennedy - CEP: 32145-900",
+                "imgLoja": "style/public/img/FotoLoja/901/901.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "14",
+        "nome": "Pará",
+        "sigla": "PA",
+        "lojas": [
+            {
+                "codeLoja": 112,
+                "nomeLoja": "Norte - Santarém",
+                "enderecoLoja": "ROD. Santarem-Cuiabá, n° 3194, Esperança - CEP: 68030-000",
+                "imgLoja": "style/public/img/FotoLoja/112/112.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 114,
+                "nomeLoja": "Norte - Itaituba",
+                "enderecoLoja": "Rua Sétima, SN, Bairro São Francisco - CEP: 68184-014",
+                "imgLoja": "",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 201,
+                "nomeLoja": "Sudeste - Santarém",
+                "enderecoLoja": "Av. Cuiaba, n° 3758, Matinha - CEP: 68040-040",
+                "imgLoja": "style/public/img/FotoLoja/201/201.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 202,
+                "nomeLoja": "Sudeste - Santarém",
+                "enderecoLoja": "Av. Cuiaba, n° 3758, Matinha - CEP: 68040-040",
+                "imgLoja": "style/public/img/FotoLoja/201/201.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 203,
+                "nomeLoja": "Sudeste - Altamira",
+                "enderecoLoja": "Av. Perimetral, SN, Sudam  II - CEP: 68374-274",
+                "imgLoja": "style/public/img/FotoLoja/203/203.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 205,
+                "nomeLoja": "Sudeste - Marituba",
+                "enderecoLoja": "ROD. Alca Viaria KM 01, n° 26, São João - CEP: 67200-000",
+                "imgLoja": "style/public/img/FotoLoja/205/205.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 206,
+                "nomeLoja": "Sudeste - Parauapebas",
+                "enderecoLoja": "ROD. Pa 160, SN, LOT. Residencial Cidade Jardim - CEP: 68515-000",
+                "imgLoja": "style/public/img/FotoLoja/206/206.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 207,
+                "nomeLoja": "Sudeste - Novo Progresso",
+                "enderecoLoja": "Av. Dr. Isaias Pinheiro, n° 2022, Bela Vista - CEP: 68193-000",
+                "imgLoja": "style/public/img/FotoLoja/206/206.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 802,
+                "nomeLoja": "Norte - Redenção",
+                "enderecoLoja": "Av. Araguaia, n° 1872, Alto Paraná - CEP: 68550-253",
+                "imgLoja": "style/public/img/FotoLoja/802/802.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "15",
+        "nome": "Paraíba",
+        "sigla": "PB",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "16",
+        "nome": "Paraná",
+        "sigla": "PR",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "17",
+        "nome": "Pernambuco",
+        "sigla": "PE",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "18",
+        "nome": "Piauí",
+        "sigla": "PI",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "19",
+        "nome": "Rio de Janeiro",
+        "sigla": "RJ",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "20",
+        "nome": "Rio Grande do Norte",
+        "sigla": "RN",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "21",
+        "nome": "Rio Grande do Sul",
+        "sigla": "RS",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "22",
+        "nome": "Rondônia",
+        "sigla": "RO",
+        "lojas": [
+            {
+                "codeLoja": 105,
+                "nomeLoja": "Norte - Porto Velho",
+                "enderecoLoja": "Rua da Beira, n° 5950, Areal da Floresta - CEP: 76806-150",
+                "imgLoja": "style/public/img/FotoLoja/105/105.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 106,
+                "nomeLoja": "Norte - Ariquemes",
+                "enderecoLoja": "Av. Massangana, lote 21 Q° 01, n° 2550, Setor Apoio BR-364 - CEP: 76870-000",
+                "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 109,
+                "nomeLoja": "Norte - Jaru",
+                "enderecoLoja": "Av. Juscelino Kubitschek, n° 1792, Centro - CEP: 76890-000",
+                "imgLoja": "style/public/img/FotoLoja/109/109.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 115,
+                "nomeLoja": "Norte - Cacoal",
+                "enderecoLoja": "Av. Castelo Branco, n° 19871, Liberdade - CEP: 76967-537",
+                "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 601,
+                "nomeLoja": "Norte - Ji-Paraná",
+                "enderecoLoja": "Av. Castelo Branco, n° 982, Riachuelo - CEP: 76913-783",
+                "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "23",
+        "nome": "Roraima",
+        "sigla": "RR",
+        "lojas": [
+            {
+                "codeLoja": 103,
+                "nomeLoja": "Norte - Boa Vista",
+                "enderecoLoja": "Av. Centenario, n° 672, Cinturão Verde - CEP: 69312-377",
+                "imgLoja": "style/public/img/FotoLoja/103/103.jpeg",
+                "whatsapp": "(92) 98112-8981",
+                "telefone": "(92) 2125-1500",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 303,
+                "nomeLoja": "Norte - Boa Vista 2",
+                "enderecoLoja": "Av. Brasil, 484, Pricuma - CEP: 69309-575",
+                "imgLoja": "style/public/img/FotoLoja/303/303.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            },
+            {
+                "codeLoja": 401,
+                "nomeLoja": "Norte - Boa Vista 3",
+                "enderecoLoja": "Av. Venezuela, n° 1719, Liberdade - CEP: 69309-005",
+                "imgLoja": "style/public/img/FotoLoja/401/401.jpeg",
+                "whatsapp": "(51) 98765-4321",
+                "telefone": "(51) 3030-2020",
+                "email": "vendas@norteautopecas.com.br"
+            }
+        ]
+    },
+    {
+        "code": "24",
+        "nome": "Santa Catarina",
+        "sigla": "SC",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "25",
+        "nome": "São Paulo",
+        "sigla": "SP",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "26",
+        "nome": "Sergipe",
+        "sigla": "SE",
+        "lojas": [
+        ]
+    },
+    {
+        "code": "27",
+        "nome": "Tocantins",
+        "sigla": "TO",
+        "lojas": [
+        ]
+    }
+]

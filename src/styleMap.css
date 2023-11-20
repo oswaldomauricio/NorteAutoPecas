@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#svg-map {
+    cursor: pointer;
+}
+
+#svg-map .circle, #svg-map path {
+    fill: #3355D0;
+}
+
+/* #svg-map a:hover .circle, #svg-map a:hover path {
+    fill: #78866b !important;
+} */
+
+#container {
+    display: flex;
+    justify-content: center;
+
+}
+.secaoLojas{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.cardMapa span{
+    display: flex;
+    flex-direction: column;
+}
+.mapaFull{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.selecionarLojas{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+#Amazonas path,
+#Amapá path,
+#Rondônia path,
+#Pará path,
+#Roraima path,
+#MinasGerais path,
+#Maranhão path,
+#Acre path,
+#Bahia path {
+  fill: #141F58;
+}
+
+#Amazonas path:hover,
+#Amapá path:hover,
+#Rondônia path:hover,
+#Pará path:hover,
+#Roraima path:hover,
+#MinasGerais path:hover,
+#Maranhão path:hover,
+#Acre path:hover,
+#Bahia path:hover{
+  fill: #1d308d;
+}

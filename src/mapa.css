@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 body{
-  max-height: 10000px;
+  max-height: 100%;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 svg {
@@ -30,6 +34,13 @@ svg {
   fill: #1d308d;
 }
 
+#text {
+  width: 350px;
+  height: auto;
+  text-align: left;
+  color: black;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
 .nordeste,
 .sul,
 .centro-oeste,
@@ -43,45 +54,6 @@ path {
   stroke-width: 1px;
 }
 
-path:hover {
-  fill: rgb(189, 189, 189);
-  stroke: rgb(255, 255, 255);
-  stroke-width: 3px;
-}
-
-.tooltip {
-  pointer-events: none;
-  position: absolute;
-  font-size: 18px;
-  text-align: center;
-  background: white;
-  padding: 0px 15px;
-  z-index: 5;
-  height: 30px;
-  line-height: 30px;
-  margin: 0 auto;
-  color: #21669e;
-  border-radius: 5px;
-  transform: translateX(-50%);
-  display: none;
-}
-
-.tooltip.active {
-  display: block;
-}
-
-.tooltip:after {
-  content: url(../style/public/icons/mao-valores.png) !important;
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid white;
-}
 
 .secMap {
   display: flex;
@@ -89,8 +61,6 @@ path:hover {
   justify-content: space-between;
   align-items: start;
 }
-
-
 
 
 .btnHeaderLojas {
@@ -147,11 +117,14 @@ footer {
 
 
 .cardMapa {
-  display: flex;
+  display: none;
   padding: 10px 10px;
   margin: 10px 0;
   border-radius: 16px;
   cursor: pointer;
+  background-color: #ffffff;
+  width: 600px;
+  align-items: center;
 }
 
 .cardMapa:hover {
@@ -172,22 +145,18 @@ footer {
   line-height: normal;
 }
 
-.cardLojasInformacao h2 {
-  padding: 0 0 10px 0;
-}
-
 .title {
   padding: 0 0 10px 0;
 }
 
-.cardLoja {
-  display: flex;
-  flex-direction: column
+.cardMapa {
+  display: none;
+  flex-direction: row;
 }
 
-.cardLoja img {
-  width: 140px;
-  height: 120px;
+.cardMapa img {
+  width: 200px;
+  height: 200px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -197,9 +166,9 @@ footer {
   padding: 12px 0;
 }
 
-.cardLojasContatos span {
-  display: flex;
-  padding: 0 20px 0 0;
+.cardLojasContatos .whatsapp, .cardLojasContatos .telefone {
+  padding: 0 0px 0 10px;
+  font-size: 14px;
   color: #0E007C;
 }
 
