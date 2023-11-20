@@ -211,13 +211,14 @@
 
   <script src="src/scriptMap.js"></script>
   <script src="https://kit.fontawesome.com/abb3096af1.js" crossorigin="anonymous"></script>
-  <script>
+  <script >
     document.getElementById('brasilSvg').addEventListener('load', function () {
-      // Chama a função fetchSvg quando a imagem é carregada com sucesso
       fetchSvg(this);
+      showLoading()
     });
 
   </script>
+  <script src="src/loading.js"></script>
     <script defer src="src/btnHeaderLojas.js"></script>
     <script src="index.js" type="text/javascript"></script>
     <script src="src/authenticationCep.js" type="text/javascript"></script>
