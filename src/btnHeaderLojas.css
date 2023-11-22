@@ -19,6 +19,7 @@
 }
 .containerDeLojas{
     position: relative;
+    display: none;
 }
 
 .cardLojasCampo {
@@ -27,6 +28,7 @@
     background-color: #fff;
     border-bottom: 3px solid #0E007C;
     color: #000;
+    align-items: center;
 }
 .cardLojasCampo:hover {
     background-color: #DBDBDB;
@@ -47,12 +49,16 @@
 
 .cardLojasCampo h1,
 .cardLojasInformacao span {
-    padding: 0 0 16px 0;
+    padding: 0 0 5px 0;
 }
 
 .cardlojasContatos {
-    padding: 16px 0 0 0;
+    padding: 5px 0 0 0;
+    display: flex;
+    
 }
+
+
 
 .cardLojasInformacao h1 {
     font-size: 18px;
@@ -64,30 +70,35 @@
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
+    
 }
 
-.cardlojasContatos {
-    display: flex;
 
-}
-
-.cardlojasContatos span {
+.cardlojasContatos span{
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
     color: #0E007C;
     padding: 0 10px;
+    display: flex;
 }
 .cardlojasContatos i {
-    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    color: #1FAF38;
+    display: flex;
+    color: #60D669;
+    font-size: 20px;
+
 }
+
+.cardLojasContatos i {
+    color: #60D669;
+    font-size: 20px;
+    padding: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+  }
 
 .close{
     display: none;
-}
-.open{
-    display: block;
 }

@@ -75,8 +75,9 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
                             <span class="enderecoLoja">${loja.enderecoLoja}</span>
                             <span class="email">${loja.email}</span>
                             <div class="cardLojasContatos">
-                              <span><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></span>
-                              <span><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></span>
+                              <div><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></div>
+                              
+                              <div><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></div>
                             </div>
                           </div>
                         </div>`;

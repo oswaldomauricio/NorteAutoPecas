@@ -479,9 +479,6 @@
         "nome": "São Paulo",
         "sigla": "SP",
         "lojas": [
-            {
-                "nomeLoja": "Sem Lojas Disponiveis"
-            }
         ]
     },
     {

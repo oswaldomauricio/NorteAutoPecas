@@ -23,7 +23,6 @@
   font-size: 24px;
 }
 
-
 /* * {
   scrollbar-width: thin;
   scrollbar-color: #000 #fff;
@@ -97,6 +96,12 @@
   font-weight: 600;
   color: #0E007C;
 }
+.FonteMain h1 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0E007C;
+}
+
 
 /* <div class="FonteMain">
       <h2>Nossas Lojas</h2>

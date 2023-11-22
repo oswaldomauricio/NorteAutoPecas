@@ -112,8 +112,8 @@ footer {
 }
 
 .cardMapa img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -127,10 +127,4 @@ footer {
   padding: 0 0px 0 10px;
   font-size: 14px;
   color: #0E007C;
-}
-
-.cardLojasContatos i {
-  color: #60D669;
-  font-size: 20px;
-  padding: 0 10px 0 0;
 }
