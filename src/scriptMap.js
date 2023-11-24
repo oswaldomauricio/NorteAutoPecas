@@ -1,21 +1,33 @@
 const estados = [];
 
+
+
 const fetchSvg = (image) => {
   fetch(image.src)
     .then((response) => response.text())
     .then((response) => {
+
+
+
       const span = document.createElement('span');
       span.innerHTML = response;
-      const inlineSvg = span.getElementsByTagName('svg')[0];
-      image.parentNode.replaceChild(inlineSvg, image);
+      getActions();
+      // Add a click event listener to the new SVG after loading
+      document.getElementById('svg-map').addEventListener('click', handleSvgClick);
       return true;
     })
-    .then(() => {
-      getActions();
-      // Adiciona um evento de clique no SVG após carregar
-      document.getElementById('svg-map').addEventListener('click', handleSvgClick);
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.text();
+    })
+    .catch((error) => {
+      console.error('Error fetching or processing SVG:', error);
     });
+
 };
+
 
 const getActions = () => {
   const states = document.getElementsByClassName('estado');
@@ -27,6 +39,7 @@ const getActions = () => {
   getEstados();
 };
 
+
 const handleSvgClick = (event) => {
   // Verifica se o clique foi em um estado
   const estadoElement = event.target.closest('.estado');
@@ -34,6 +47,7 @@ const handleSvgClick = (event) => {
     stateClicked(estadoElement);
   }
 };
+
 
 const getEstados = () => {
   fetch('estados.json')

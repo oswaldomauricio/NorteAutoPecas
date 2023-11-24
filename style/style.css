@@ -23,6 +23,10 @@
   font-size: 24px;
 }
 
+.fixo{
+  border-bottom: 2px solid #dddddd;
+}
+
 /* * {
   scrollbar-width: thin;
   scrollbar-color: #000 #fff;
@@ -213,6 +217,7 @@ a {
   gap: 24px;
 }
 
+
 /*NAV*/
 
 .menuHeader a {
@@ -220,7 +225,7 @@ a {
   font-weight: 600;
 }
 .menuHeaderMain a {
-  padding: 0 24px;
+  padding: 0 24px 24px;
   font-weight: 600;
 }
 

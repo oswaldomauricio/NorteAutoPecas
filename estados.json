@@ -280,7 +280,7 @@
                 "codeLoja": 202,
                 "nomeLoja": "Sudeste - Santarém",
                 "enderecoLoja": "Av. Cuiaba, n° 3758, Matinha - CEP: 68040-040",
-                "imgLoja": "style/public/img/FotoLoja/201/201.jpeg",
+                "imgLoja": "style/public/img/FotoLoja/202/202.jpeg",
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas@norteautopecas.com.br"
@@ -316,7 +316,7 @@
                 "codeLoja": 207,
                 "nomeLoja": "Sudeste - Novo Progresso",
                 "enderecoLoja": "Av. Dr. Isaias Pinheiro, n° 2022, Bela Vista - CEP: 68193-000",
-                "imgLoja": "style/public/img/FotoLoja/206/206.jpeg",
+                "imgLoja": "style/public/img/FotoLoja/207/207.jpeg",
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas@norteautopecas.com.br"
@@ -417,7 +417,7 @@
                 "codeLoja": 115,
                 "nomeLoja": "Norte - Cacoal",
                 "enderecoLoja": "Av. Castelo Branco, n° 19871, Liberdade - CEP: 76967-537",
-                "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
+                "imgLoja": "style/public/img/FotoLoja/115/115.jpeg",
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas@norteautopecas.com.br"
@@ -426,7 +426,7 @@
                 "codeLoja": 601,
                 "nomeLoja": "Norte - Ji-Paraná",
                 "enderecoLoja": "Av. Castelo Branco, n° 982, Riachuelo - CEP: 76913-783",
-                "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
+                "imgLoja": "style/public/img/FotoLoja/601/601.jpeg",
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas@norteautopecas.com.br"
@@ -479,9 +479,6 @@
         "nome": "São Paulo",
         "sigla": "SP",
         "lojas": [
-            {
-                "nomeLoja": "Sem Lojas Disponiveis"
-            }
         ]
     },
     {
