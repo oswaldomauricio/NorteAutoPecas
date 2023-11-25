@@ -70,3 +70,18 @@ svg {
 #Mato:hover{
     fill: red;
 }
+
+@media (max-width: 800px){
+    .selecionarLojas {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .FonteMain {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

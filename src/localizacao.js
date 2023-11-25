@@ -1,67 +1,3 @@
-// function ip(){
-//   $.getJSON(
-//     "https://ipinfo.io/200.208.171.162?token=5aa4443825f4df",
-//     // "https://ipinfo.io?token=5aa4443825f4df",
-//     function (localizacao) {
-//       var atualoc = localizacao["city"];
-//       if(atualoc == "Amazonas"){
-//         $("#emailHeader").html("vendas@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("Vendas@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Para"){
-//         $("#emailHeader").html("v");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas112@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Belém"){
-//         $("#emailHeader").html("");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas112@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Marabá"){
-//         $("#emailHeader").html("vendas202@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas202@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Parauapebas"){
-//         $("#emailHeader").html("vendas206@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas206@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Marituba"){
-//         $("#emailHeader").html("vendas205@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas205@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Altamira"){
-//         $("#emailHeader").html("vendas203@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas203@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Itaituba"){
-//         $("#emailHeader").html("vendas114@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas114@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Redenção"){
-//         $("#emailHeader").html("vendas802@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas802@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } else if(atualoc == "Novo Progresso"){
-//         $("#emailHeader").html("vendas206@norteautopeças.com.br");
-//         $("#contatoHeader").html("(92) 2129-1500");
-//         $("#emailFooter").html("vendas206@norteautopeças.com.br");
-//         $("#contatoFooter").html("(92) 2129-1500");
-//       } 
-
-//     }
-//   );
-// }
-// ip()
-
-
 function coordenadasParaEndereco(latitude, longitude, apiKey) {
   // URL da API OpenCage Geocoding
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
@@ -212,324 +148,324 @@ navigator.geolocation.getCurrentPosition(
         nomeLoja: "Norte - Torquato Tapajos",
         latitude: -3.0632173,
         longitude: -60.027991,
-        endereco: "",
-        whatsapp: "", 
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
-        email: `vendas@norteautopeças.com.br`
+        email: `vendas101@norteautopeças.com.br`
       },
       {
         nome: '102',
-        nomeLoja: "",
+        nomeLoja: "Norte - Autaz Mirim",
         latitude: -3.0564041,
         longitude: -59.9505123,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas102@norteautopeças.com.br`
       },
       {
         nome: '103',
-        nomeLoja: "",
+        nomeLoja: "Norte - Boa Vista",
         latitude: 2.7985708,
         longitude: 60.7066736,
-        endereco: "",
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas103@norteautopeças.com.br`
       },
       {
         nome: '104',
-        nomeLoja: "",
+        nomeLoja: "Norte - Camapuã",
         latitude: -3.0345189,
         longitude: -59.9495248,
-        endereco: "",
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas104@norteautopeças.com.br`
       },
       {
         nome: '105',
-        nomeLoja: "",
+        nomeLoja: "Norte - Porto Velho",
         latitude: -8.7753127,
         longitude: -63.8802034,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas105@norteautopeças.com.br`
       },
       {
         nome: '106',
-        nomeLoja: "",
+        nomeLoja: "Norte - Ariquemes",
         latitude: -9.9092968,
         longitude: -63.0549759,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas106@norteautopeças.com.br`
       },
       {
         nome: '107',
-        nomeLoja: "",
+        nomeLoja: "Norte - Rio Branco 1",
         latitude: -9.9929193,
         longitude: -67.8079518,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas107@norteautopeças.com.br`
       },
       {
         nome: '108',
-        nomeLoja: "",
+        nomeLoja: "Norte - Silves",
         latitude: -3.1310813,
         longitude: -59.9897314,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "", 
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas108@norteautopeças.com.br`
       },
       {
         nome: '109',
-        nomeLoja: "",
+        nomeLoja: "Norte - Jaru",
         latitude: -10.4377012,
         longitude: -62.4713272,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas109@norteautopeças.com.br`
       },
       {
         nome: '110',
-        nomeLoja: "",
+        nomeLoja: "Norte - Piorini",
         latitude: -3.0013989,
         longitude: -60.0053942,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas110@norteautopeças.com.br`
       },
       {
         nome: '111',
-        nomeLoja: "",
+        nomeLoja: "Norte - Rio Branco 2",
         latitude: -10.0120592,
         longitude: -67.783332,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas111@norteautopeças.com.br`
       },
       {
         nome: '112',
-        nomeLoja: "",
+        nomeLoja: "Norte - Santarém",
         latitude: -2.450292,
         longitude: -54.7298145,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas112@norteautopeças.com.br`
       },
       {
         nome: '114',
-        nomeLoja: "",
+        nomeLoja: "Norte - Itaituba",
         latitude: -4.2537166,
         longitude: -56.0035462,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas114@norteautopeças.com.br`
       },
       {
         nome: '115',
-        nomeLoja: "",
+        nomeLoja: "Norte - Cacoal",
         latitude: -11.4392994,
         longitude: -61.4542333,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas115@norteautopeças.com.br`
       },
       {
         nome: '201',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Santarém",
         latitude: -2.4576275,
         longitude: -54.7282424,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas201@norteautopeças.com.br`
       },
       {
         nome: '202',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Marabá",
         latitude: -5.3613466,
         longitude: -49.0794125,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas202@norteautopeças.com.br`
       },
       {
         nome: '203',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Altamira",
         latitude: -3.2122637,
         longitude: -52.2322213,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas203@norteautopeças.com.br`
       },
       {
         nome: '204',
         nomeLoja: "",
         latitude: 0.0774784,
         longitude: -51.0656303,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas204@norteautopeças.com.br`
       },
       {
         nome: '205',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Marituba",
         latitude: -1.370983,
         longitude: -48.3618731,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas205@norteautopeças.com.br`
       },
       {
         nome: '206',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Parauapebas",
         latitude: -6.0796246,
         longitude: -49.8670794,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas206@norteautopeças.com.br`
       },
       {
         nome: '207',
-        nomeLoja: "",
+        nomeLoja: "Sudeste - Novo Progresso",
         latitude: -7.0328241,
         longitude: -55.4175541,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas207@norteautopeças.com.br`
       },
       {
         nome: '301',
-        nomeLoja: "",
+        nomeLoja: "Norte - Flores",
         latitude: -3.0517867,
         longitude: -59.985839,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas301@norteautopeças.com.br`
       },
       {
         nome: '302',
-        nomeLoja: "",
+        nomeLoja: "Norte - Piorini 2",
         latitude: -2.9986227,
         longitude: -60.0145096,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas302@norteautopeças.com.br`
       },
       {
         nome: '303',
-        nomeLoja: "",
+        nomeLoja: "Norte - Boa Vista 2",
         latitude: 2.8019255,
         longitude: -60.694431,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas303@norteautopeças.com.br`
       },
       {
         nome: '401',
-        nomeLoja: "",
+        nomeLoja: "Norte - Boa Vista 3",
         latitude: 2.8201189,
         longitude: -60.6947645,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas401@norteautopeças.com.br`
       },
       // { nome: '402', latitude: , longitude: },
       // { nome: '403', latitude: , longitude: },
       // { nome: '404', latitude: , longitude: },
       {
         nome: '501',
-        nomeLoja: "",
+        nomeLoja: "Norte - Imperatriz",
         latitude: -5.4847569,
         longitude: -47.4720687,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas501@norteautopeças.com.br`
       },
       {
         nome: '502',
-        nomeLoja: "",
+        nomeLoja: "Norte - Balsas",
         latitude: -7.5197783,
         longitude: -46.0565048,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas502@norteautopeças.com.br`
       },
       {
         nome: '503',
-        nomeLoja: "",
+        nomeLoja: "Norte - São Luis",
         latitude: -2.6173989,
         longitude: -44.2548369,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas503@norteautopeças.com.br`
       },
       {
         nome: '601',
-        nomeLoja: "",
+        nomeLoja: "Norte - Ji-Paraná",
         latitude: -10.8941543,
         longitude: -61.9293508,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas601@norteautopeças.com.br`
       },
       // { nome: '801', latitude: , longitude: },
       {
         nome: '802',
-        nomeLoja: "",
+        nomeLoja: "Norte - Redenção",
         latitude: -8.0443914,
         longitude: -50.0260215,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas802@norteautopeças.com.br`
       },
       {
         nome: '701',
-        nomeLoja: "",
+        nomeLoja: "Norte - Vitoria da Conquista",
         latitude: -14.8610929,
         longitude: -40.8499632,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas701@norteautopeças.com.br`
       },
       {
         nome: '901',
-        nomeLoja: "",
+        nomeLoja: "Norte - Contagem",
         latitude: -19.9296021,
         longitude: -44.0073979,
-        endereco: "", 
-        whatsapp: "",
-        telefone: "",
-        email: ""
+        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
+        whatsapp: "(92) 98112-8981", 
+        telefone: "(92) 2129-1500",
+        email: `vendas901@norteautopeças.com.br`
       },
 
 

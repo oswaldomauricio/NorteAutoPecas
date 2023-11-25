@@ -56,7 +56,7 @@
             {
                 "codeLoja": 101,
                 "nomeLoja": "Norte - Torquato Tapajos",
-                "enderecoLoja": "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM",
+                "enderecoLoja": "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
                 "imgLoja": "style/public/img/FotoLoja/101/101.jpg",
                 "whatsapp": "(92) 98112-8981",
                 "telefone": "(92) 2125-1500",
@@ -278,7 +278,7 @@
             },
             {
                 "codeLoja": 202,
-                "nomeLoja": "Sudeste - Santarém",
+                "nomeLoja": "Sudeste - Marabá",
                 "enderecoLoja": "Av. Cuiaba, n° 3758, Matinha - CEP: 68040-040",
                 "imgLoja": "style/public/img/FotoLoja/202/202.jpeg",
                 "whatsapp": "(51) 98765-4321",
