@@ -246,8 +246,8 @@ navigator.geolocation.getCurrentPosition(
       {
         nome: '111',
         nomeLoja: "Norte - Rio Branco 2",
-        latitude: -10.0120592,
-        longitude: -67.783332,
+        latitude: -9.9581952,
+        longitude: -67.8166528,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
         whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
