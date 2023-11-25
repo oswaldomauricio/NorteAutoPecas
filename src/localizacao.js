@@ -167,8 +167,38 @@ function encontrarLojaMaisProxima(usuarioLatitude, usuarioLongitude, lojas) {
 
 
 function exibirCardLojaMaisProxima(loja) {
-  // Aqui você pode implementar a lógica para exibir as informações da loja no seu site
+  // Aqui você pode implementar a lógica para exibir as informações da loja no seu site.
+
   console.log('Loja mais próxima:', loja);
+
+  //modifica o email e o numero de telefone
+
+//email
+  let emailFooter = document.querySelector("#emailFooter")
+  emailFooter.innerHTML = loja.telefone;
+
+  let emailLink = document.querySelector("#emailLink");
+  emailLink.href = "mailto:" + loja.email;
+
+  emailLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = emailLink.href;
+  });
+  //contato
+  let contatoFooter = document.querySelector("#contatoFooter")
+  contatoFooter.innerHTML = loja.email;
+
+  let contatoLink = document.querySelector("#contatoLink");
+  contatoLink.href = "tel:+55:" + loja.telefone;
+
+  contatoLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    // Abre o cliente de e-mail padrão
+    window.location.href = contatoLink.href;
+  });
+
+  //modifica os cards a partir da loja.
+
 }
 navigator.geolocation.getCurrentPosition(
   function (position) {
@@ -177,42 +207,331 @@ navigator.geolocation.getCurrentPosition(
 
     // Lista de coordenadas das suas lojas
     const lojas = [
-      { nome: '101', latitude: -3.0632173, longitude: -60.027991 },
-      { nome: '102', latitude: -3.0564041, longitude: -59.9505123 },
-      { nome: '103', latitude: 2.7985708, longitude: 60.7066736 },
-      { nome: '104', latitude: -3.0345189, longitude: -59.9495248 },
-      { nome: '105', latitude: -8.7753127, longitude: -63.8802034 },
-      { nome: '106', latitude: -9.9092968, longitude: -63.0549759 },
-      { nome: '107', latitude: -9.9929193, longitude: -67.8079518 },
-      { nome: '108', latitude: -3.1310813, longitude: -59.9897314 },
-      { nome: '109', latitude: -10.4377012, longitude: -62.4713272 },
-      { nome: '110', latitude: -3.0013989, longitude: -60.0053942 },
-      { nome: '111', latitude: -10.0120592, longitude: -67.783332 },
-      { nome: '112', latitude: -2.450292, longitude: -54.7298145 },
-      { nome: '114', latitude: -4.2537166, longitude: -56.0035462 },
-      { nome: '115', latitude: -11.4392994, longitude: -61.4542333 },
-      { nome: '201', latitude: -2.4576275, longitude: -54.7282424 },
-      { nome: '202', latitude: -5.3613466, longitude: -49.0794125 },
-      { nome: '203', latitude: -3.2122637, longitude: -52.2322213 },
-      { nome: '204', latitude: 0.0774784, longitude: -51.0656303 },
-      { nome: '205', latitude: -1.370983, longitude: -48.3618731 },
-      { nome: '206', latitude: -6.0796246, longitude: -49.8670794 },
-      { nome: '207', latitude: -7.0328241, longitude: -55.4175541 },
-      { nome: '301', latitude: -3.0517867, longitude: -59.985839 },
-      { nome: '302', latitude: -2.9986227, longitude: -60.0145096 },
-      { nome: '303', latitude: 2.8019255, longitude: -60.694431 },
-      { nome: '401', latitude: 2.8201189, longitude: -60.6947645 },
+      {
+        nome: '101',
+        nomeLoja: "Norte - Torquato Tapajos",
+        latitude: -3.0632173,
+        longitude: -60.027991,
+        endereco: "",
+        whatsapp: "", 
+        telefone: "(92) 2129-1500",
+        email: `vendas@norteautopeças.com.br`
+      },
+      {
+        nome: '102',
+        nomeLoja: "",
+        latitude: -3.0564041,
+        longitude: -59.9505123,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '103',
+        nomeLoja: "",
+        latitude: 2.7985708,
+        longitude: 60.7066736,
+        endereco: "",
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '104',
+        nomeLoja: "",
+        latitude: -3.0345189,
+        longitude: -59.9495248,
+        endereco: "",
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '105',
+        nomeLoja: "",
+        latitude: -8.7753127,
+        longitude: -63.8802034,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '106',
+        nomeLoja: "",
+        latitude: -9.9092968,
+        longitude: -63.0549759,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '107',
+        nomeLoja: "",
+        latitude: -9.9929193,
+        longitude: -67.8079518,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '108',
+        nomeLoja: "",
+        latitude: -3.1310813,
+        longitude: -59.9897314,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "", 
+        email: ""
+      },
+      {
+        nome: '109',
+        nomeLoja: "",
+        latitude: -10.4377012,
+        longitude: -62.4713272,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '110',
+        nomeLoja: "",
+        latitude: -3.0013989,
+        longitude: -60.0053942,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '111',
+        nomeLoja: "",
+        latitude: -10.0120592,
+        longitude: -67.783332,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '112',
+        nomeLoja: "",
+        latitude: -2.450292,
+        longitude: -54.7298145,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '114',
+        nomeLoja: "",
+        latitude: -4.2537166,
+        longitude: -56.0035462,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '115',
+        nomeLoja: "",
+        latitude: -11.4392994,
+        longitude: -61.4542333,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '201',
+        nomeLoja: "",
+        latitude: -2.4576275,
+        longitude: -54.7282424,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '202',
+        nomeLoja: "",
+        latitude: -5.3613466,
+        longitude: -49.0794125,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '203',
+        nomeLoja: "",
+        latitude: -3.2122637,
+        longitude: -52.2322213,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '204',
+        nomeLoja: "",
+        latitude: 0.0774784,
+        longitude: -51.0656303,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '205',
+        nomeLoja: "",
+        latitude: -1.370983,
+        longitude: -48.3618731,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '206',
+        nomeLoja: "",
+        latitude: -6.0796246,
+        longitude: -49.8670794,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '207',
+        nomeLoja: "",
+        latitude: -7.0328241,
+        longitude: -55.4175541,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '301',
+        nomeLoja: "",
+        latitude: -3.0517867,
+        longitude: -59.985839,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '302',
+        nomeLoja: "",
+        latitude: -2.9986227,
+        longitude: -60.0145096,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '303',
+        nomeLoja: "",
+        latitude: 2.8019255,
+        longitude: -60.694431,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '401',
+        nomeLoja: "",
+        latitude: 2.8201189,
+        longitude: -60.6947645,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
       // { nome: '402', latitude: , longitude: },
       // { nome: '403', latitude: , longitude: },
       // { nome: '404', latitude: , longitude: },
-      { nome: '501', latitude: -5.4847569, longitude: -47.4720687 },
-      { nome: '502', latitude: -7.5197783, longitude: -46.0565048 },
-      { nome: '503', latitude: -2.6173989, longitude: -44.2548369 },
-      { nome: '601', latitude: -10.8941543, longitude: -61.9293508 },
+      {
+        nome: '501',
+        nomeLoja: "",
+        latitude: -5.4847569,
+        longitude: -47.4720687,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '502',
+        nomeLoja: "",
+        latitude: -7.5197783,
+        longitude: -46.0565048,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '503',
+        nomeLoja: "",
+        latitude: -2.6173989,
+        longitude: -44.2548369,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '601',
+        nomeLoja: "",
+        latitude: -10.8941543,
+        longitude: -61.9293508,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
       // { nome: '801', latitude: , longitude: },
-      { nome: '802', latitude: -8.0443914, longitude: -50.0260215 },
-      { nome: '701', latitude: -14.8610929, longitude: -40.8499632 },
-      { nome: '901', latitude: -19.9296021, longitude: -44.0073979 },
+      {
+        nome: '802',
+        nomeLoja: "",
+        latitude: -8.0443914,
+        longitude: -50.0260215,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '701',
+        nomeLoja: "",
+        latitude: -14.8610929,
+        longitude: -40.8499632,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+      {
+        nome: '901',
+        nomeLoja: "",
+        latitude: -19.9296021,
+        longitude: -44.0073979,
+        endereco: "", 
+        whatsapp: "",
+        telefone: "",
+        email: ""
+      },
+
 
 
 
