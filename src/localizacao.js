@@ -216,8 +216,8 @@ navigator.geolocation.getCurrentPosition(
       {
         nome: '108',
         nomeLoja: "Norte - Silves",
-        latitude: -3.1310813,
-        longitude: -59.9897314,
+        latitude: -3.0469117,
+        longitude: -60.0147795,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
         whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
@@ -256,8 +256,8 @@ navigator.geolocation.getCurrentPosition(
       {
         nome: '112',
         nomeLoja: "Norte - Santarém",
-        latitude: -2.450292,
-        longitude: -54.7298145,
+        latitude: -1.3631488,
+        longitude: -48.4671488,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
         whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
@@ -399,8 +399,8 @@ navigator.geolocation.getCurrentPosition(
       {
         nome: '501',
         nomeLoja: "Norte - Imperatriz",
-        latitude: -5.4847569,
-        longitude: -47.4720687,
+        latitude: -5.080419,
+        longitude: -45.6007108,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
         whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
@@ -409,8 +409,8 @@ navigator.geolocation.getCurrentPosition(
       {
         nome: '502',
         nomeLoja: "Norte - Balsas",
-        latitude: -7.5197783,
-        longitude: -46.0565048,
+        latitude: -7.5300864,
+        longitude: -46.0455936,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
         whatsapp: "(92) 98112-8981", 
         telefone: "(92) 2129-1500",
