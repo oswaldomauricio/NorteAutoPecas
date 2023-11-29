@@ -23,7 +23,6 @@ body{
 .btnHeaderLojas {
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
 
 /**/
@@ -78,7 +77,6 @@ footer {
   padding: 10px 10px;
   margin: 10px 0;
   border-radius: 16px;
-  cursor: pointer;
   background-color: #ffffff;
   width: 600px;
   align-items: center;

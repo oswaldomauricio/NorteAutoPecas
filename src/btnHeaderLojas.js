@@ -1,22 +1,19 @@
 let btnHeaderLojas = document.querySelector(".btnHeaderLojas");
 let body = document.querySelector('body', '.swiper-slide')
 
-body.addEventListener('click', cliqueFora )
+body.addEventListener('click', cliqueFora)
 btnHeaderLojas.addEventListener('click', function (event) {
-    ip(event);
+    buscarIp(event);
 });
 
-function ip(event) {
+function buscarIp(event) {
     var containerDeLojas = document.getElementById("containerDeLojas");
 
-    // Verifica se o contêinerDeLojas está vazio
     if (containerDeLojas.children.length > 0) {
         event.preventDefault();
 
-        // Limpa os cartões existentes antes de adicionar novos
         containerDeLojas.innerHTML = "";
 
-        
     } else {
         localizacaoAtual();
     }
@@ -34,21 +31,23 @@ function cliqueFora(event) {
     }
 }
 
-// Dados de várias lojas
 var lojasEndpoint = 'estados.json';
 
-// Função para criar cartões de loja
 function criarCartaoLoja(lojas) {
-    // Assuming lojas is an array of store objects
     lojas.forEach(function (loja) {
-        // Criação dos elementos HTML
         var divCardLojas = document.createElement("div");
         divCardLojas.className = "cardLojas";
 
         var divCardLojasCampo = document.createElement("div");
         divCardLojasCampo.className = "cardLojasCampo";
 
-        // Uncomment this if you have an "imgLoja" property in your JSON data
+        var containerDeLojas = document.getElementById("containerDeLojas");
+        containerDeLojas.appendChild(divCardLojas);
+
+        divCardLojas.addEventListener("click", function () {
+            redirecionarParaWhatsApp(loja.whatsapp);
+        });
+
         var imagem = document.createElement("img");
         imagem.src = loja.imgLoja;
         imagem.alt = "";
@@ -59,17 +58,20 @@ function criarCartaoLoja(lojas) {
         var h1 = document.createElement("h1");
         h1.textContent = loja.nomeLoja;
 
-        var spanEndereco = document.createElement("span");
+        var spanEndereco = document.createElement("div");
+        spanEndereco.className = "spanEndereco";
         spanEndereco.textContent = loja.enderecoLoja;
 
         var email = document.createElement("div");
+        email.className = "email"
         email.textContent = loja.email;
 
         var divCardLojasContatos = document.createElement("div");
         divCardLojasContatos.className = "cardlojasContatos";
 
-        var iWhatsapp1 = document.createElement("i");
-        iWhatsapp1.className = "fa-brands fa-whatsapp";
+
+        var telefone = document.createElement("i");
+        telefone.className = "fa-solid fa-phone";
 
         var spanTelefone1 = document.createElement("span");
         spanTelefone1.textContent = loja.telefone;
@@ -80,8 +82,7 @@ function criarCartaoLoja(lojas) {
         var spanTelefone2 = document.createElement("span");
         spanTelefone2.textContent = loja.whatsapp;
 
-        // Adiciona os elementos ao DOM na ordem desejada
-        divCardLojasContatos.appendChild(iWhatsapp1);
+        divCardLojasContatos.appendChild(telefone);
         divCardLojasContatos.appendChild(spanTelefone1);
         divCardLojasContatos.appendChild(iWhatsapp2);
         divCardLojasContatos.appendChild(spanTelefone2);
@@ -91,16 +92,19 @@ function criarCartaoLoja(lojas) {
         divCardLojasInformacao.appendChild(email);
         divCardLojasInformacao.appendChild(divCardLojasContatos);
 
-        // Uncomment this if you have an "imgLoja" property in your JSON data
         divCardLojasCampo.appendChild(imagem);
         divCardLojasCampo.appendChild(divCardLojasInformacao);
 
         divCardLojas.appendChild(divCardLojasCampo);
 
-        // Adiciona o cartão de loja ao elemento desejado no DOM
         var containerDeLojas = document.getElementById("containerDeLojas");
         containerDeLojas.appendChild(divCardLojas);
     });
+}
+function redirecionarParaWhatsApp(numero) {
+    var mensagem = encodeURIComponent("Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.");
+    var linkWhatsApp = `https://api.whatsapp.com/send/?phone=+55${numero}&text=${mensagem}&type=phone_number&app_absent=0`;
+    window.open(linkWhatsApp, '_blank');
 }
 
 const localizacaoAtual = () => {
@@ -109,18 +113,40 @@ const localizacaoAtual = () => {
         .then(localizacao => {
             var atualoc = localizacao.region;
 
-            // Fetch data from the endpoint
             fetch(lojasEndpoint)
                 .then(response => response.json())
                 .then(lojasData => {
                     // Adiciona os cartões de loja ao elemento desejado no DOM
-                    lojasData.forEach(function (item) {
-                        // Check if the region matches the current location
-                        if (item.nome == atualoc) {
-                            // Assuming 'lojas' is the property containing the array of stores
-                            criarCartaoLoja(item.lojas);
-                        }
-                    });
+                    var lojasEncontradas = lojasData.find(item => item.nome === atualoc);
+
+                    if (lojasEncontradas) {
+                        criarCartaoLoja(lojasEncontradas.lojas);
+                    } else {
+                        exibirCartoesDaLoja101();
+                    }
                 });
         });
 };
+
+function exibirCartoesDaLoja101() {
+    var dadosLoja101 = {
+        nomeLoja: "Clique aqui e veja nossas lojas:",
+    };
+
+    var textoLoja = document.createElement("p");
+    textoLoja.className = "textoSemLoja";
+    textoLoja.textContent = dadosLoja101.nomeLoja;
+
+    var containerDeLojas = document.getElementById("containerDeLojas");
+    if (containerDeLojas) {
+        containerDeLojas.innerHTML = "";
+
+        containerDeLojas.appendChild(textoLoja);
+
+        containerDeLojas.addEventListener('click', function () {
+            window.location.href = '../map.html';
+        });
+    } else {
+        console.error("Elemento 'containerDeLojas' não encontrado.");
+    }
+}

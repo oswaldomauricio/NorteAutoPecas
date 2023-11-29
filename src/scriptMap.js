@@ -82,19 +82,22 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
 
     lojas.forEach(loja => {
       mapaFull.innerHTML = ""
-      let estrutura = `<div class="cardMapa">
-                          <img class="imgCard" src="${loja.imgLoja}" alt="">
-                          <div class="cardLojasInformacao">
-                            <h2 class="nomeLoja">${loja.nomeLoja}</h2>
-                            <span class="enderecoLoja">${loja.enderecoLoja}</span>
-                            <span class="email">${loja.email}</span>
-                            <div class="cardLojasContatos">
-                              <div><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></div>
-                              
-                              <div><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></div>
+      const linkEmail = `=mailto:${loja.email}`;
+      let estrutura = `<div class="cardTemplate">
+        <div class="cardMapa">
+                            <img class="imgCard" src="${loja.imgLoja}" alt="">
+                            <div class="cardLojasInformacao">
+                              <h2 class="nomeLoja">${loja.nomeLoja}</h2>
+                              <span class="enderecoLoja">${loja.enderecoLoja}</span>
+                              <a class="linkEmail" href=mailto:${linkEmail}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês."><span class="email">${loja.email}</span></a>
+                              <div class="cardLojasContatos">
+                                <a class="linkWpp" href=""><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></a>
+        
+                                <a class="linkTel" href="" ><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></a>
+                              </div>
                             </div>
                           </div>
-                        </div>`;
+      </div>`;
 
       let div = document.createElement('div');
       div.innerHTML = estrutura;
@@ -109,6 +112,15 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
       cardClone.querySelector('.email').innerText = loja.email;
+      cardClone.querySelector('.linkEmail').href = `mailto:${loja.email}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.`;
+
+      cardClone.querySelector('.linkWpp').href = `https://api.whatsapp.com/send/?phone=+55${loja.whatsapp}&text=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
+      cardClone.querySelector('.linkWpp').target = "_blank"
+
+      cardClone.querySelector('.linkTel').href = `tel:+55:${loja.telefone}`;
+      cardClone.querySelector('.linkTel').target = "_self"
+
+
       cardClone.querySelector('.whatsapp').innerText = loja.whatsapp;
       cardClone.querySelector('.telefone').innerText = loja.telefone;
 

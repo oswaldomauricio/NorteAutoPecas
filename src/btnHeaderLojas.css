@@ -1,23 +1,23 @@
-.btnHeaderLojas  {
+.btnHeaderLojas {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
 .cardLojas {
-    /* position: absolute; */
-    /* left: 350px; */
     width: 600px;
     z-index: 100;
-    box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
-    -webkit-box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
-    -moz-box-shadow: 5px 3px 10px -2px rgba(0,0,0,0.37);
+    box-shadow: 5px 3px 10px -2px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: -2px -3px 10px -2px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 5px 3px 10px -2px rgba(0, 0, 0, 0.37);
 }
-.lojasHeader{
+
+.lojasHeader {
     position: absolute;
     z-index: 101;
 }
-.containerDeLojas{
+
+.containerDeLojas {
     position: relative;
     display: none;
 }
@@ -30,6 +30,7 @@
     color: #000;
     align-items: center;
 }
+
 .cardLojasCampo:hover {
     background-color: #DBDBDB;
     border-bottom: 3px solid #1602ac;
@@ -47,15 +48,14 @@
     padding: 0 24px;
 }
 
-.cardLojasCampo h1,
-.cardLojasInformacao span {
+.cardLojasCampo h1 {
     padding: 0 0 5px 0;
 }
 
 .cardlojasContatos {
     padding: 5px 0 0 0;
     display: flex;
-    
+
 }
 
 
@@ -67,14 +67,14 @@
 }
 
 .cardLojasInformacao span {
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 5px 0;
+
 }
 
 
-.cardlojasContatos span{
+.cardlojasContatos span {
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -82,6 +82,7 @@
     padding: 0 10px;
     display: flex;
 }
+
 .cardlojasContatos i {
     font-style: normal;
     font-weight: 400;
@@ -97,8 +98,34 @@
     padding: 0 10px 0 0;
     display: flex;
     align-items: center;
-  }
+}
+.spanEndereco, .enderecoLoja{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 5px 0;
+}
+.enderecoLoja{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 5px 0;
+}
+.email{
+    color: #1602ac;
+    padding: 0 0 5px 0;
+}
 
-.close{
+.close {
     display: none;
+}
+
+
+.textoSemLoja {
+    background-color: #fff;
+    padding: 40px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.textoSemLoja:hover {
+    background-color: #f0f0f0;
 }

@@ -108,7 +108,7 @@ function exibirCardLojaMaisProxima(loja) {
    // Modifica o link do WhatsApp com base no número da loja mais próxima
    const whatsappButton = document.getElementById("whatsappButton");
    if (whatsappButton) {
-     whatsappButton.href = `https://api.whatsapp.com/send/?phone=${loja.whatsapp}&text=Olá, vim pelo site da norte auto peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
+     whatsappButton.href = `https://api.whatsapp.com/send/?phone=${loja.whatsapp}&text=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
    }
 
    //fim
@@ -122,7 +122,7 @@ function exibirCardLojaMaisProxima(loja) {
   emailFooter.innerHTML = loja.telefone;
 
   let emailLink = document.querySelector("#emailLink");
-  emailLink.href = "mailto:" + loja.email + "?subject=Assunto do Email&body=Olá, vim pelo site da norte auto peças e gostaria de fazer uma cotação com vocês.";
+  emailLink.href = "mailto:" + loja.email + "?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.";
 
   emailLink.addEventListener("click", function (event) {
     event.preventDefault();
@@ -149,6 +149,8 @@ navigator.geolocation.getCurrentPosition(
     const usuarioLatitude = position.coords.latitude;
     const usuarioLongitude = position.coords.longitude;
 
+    // const usuarioLatitude = -11.4425856
+    // const usuarioLongitude = -61.4531072;
     // Lista de coordenadas das suas lojas
     const lojas = [
       {
@@ -157,8 +159,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -3.063095,
         longitude: -60.0262701,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5592981128981", 
+        telefone: "(92) 2129-1500",
         email: `vendas101@norteautopeças.com.br`
       },
       {
@@ -167,8 +169,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -3.047333,
         longitude: -60.0106471,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5592984285270", 
+        telefone: "(92) 3301-7450",
         email: `vendas102@norteautopeças.com.br`
       },
       {
@@ -177,8 +179,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: 2.7983872,
         longitude: -60.686336,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5595981120319", 
+        telefone: "(95) 3198-2900",
         email: `vendas103@norteautopeças.com.br`
       },
       {
@@ -186,9 +188,9 @@ navigator.geolocation.getCurrentPosition(
         nomeLoja: "Norte - Camapuã",
         latitude: -3.0345189,
         longitude: -59.9495248,
-        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        endereco: "Av. Camapuã, CJ. Nossa Sra. de Fatima, 2434-H, Cidade Nova - CEP: 69097-720",
+        whatsapp: "+5592981126755", 
+        telefone: "(92) 3878-4850",
         email: `vendas104@norteautopeças.com.br`
       },
       {
@@ -197,8 +199,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -8.7736326,
         longitude: -63.8729199,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5569981160201", 
+        telefone: "(69) 3210-4448",
         email: `vendas105@norteautopeças.com.br`
       },
       {
@@ -207,8 +209,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -9.9092968,
         longitude: -63.0549759,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5569981160110", 
+        telefone: "(69) 3536-0405",
         email: `vendas106@norteautopeças.com.br`
       },
       {
@@ -217,8 +219,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -9.9929193,
         longitude: -67.8079518,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5568992326703", 
+        telefone: "(68) 32215620",
         email: `vendas107@norteautopeças.com.br`
       },
       {
@@ -226,19 +228,19 @@ navigator.geolocation.getCurrentPosition(
         nomeLoja: "Norte - Silves",
         latitude: -3.0469117,
         longitude: -60.0147795,
-        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        endereco: "Av. Silves Galpão 2, n° 857, Bairro Crespo - CEP: 69068-010",
+        whatsapp: "+5592981591853", 
+        telefone: "(92) 3314-2650",
         email: `vendas108@norteautopeças.com.br`
       },
       {
         nome: '109',
         nomeLoja: "Norte - Jaru",
-        latitude: -10.4377012,
-        longitude: -62.4713272,
+        latitude: -8.7588864,
+        longitude: -63.9008768,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5569981149573", 
+        telefone: "c",
         email: `vendas109@norteautopeças.com.br`
       },
       {
@@ -246,9 +248,9 @@ navigator.geolocation.getCurrentPosition(
         nomeLoja: "Norte - Piorini",
         latitude: -3.0604889,
         longitude: -60.0147343,
-        endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        endereco: "Av. José Henrique B. Rodrigues, n° 3269, Santa Etelvina - CEP: 69059-800",
+        whatsapp: "+5592981593151", 
+        telefone: "(92) 3652-3850",
         email: `vendas110@norteautopeças.com.br`
       },
       {
@@ -257,8 +259,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -9.9581952,
         longitude: -67.8166528,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+556892072406", 
+        telefone: "(68) 2106-8888",
         email: `vendas111@norteautopeças.com.br`
       },
       {
@@ -267,28 +269,28 @@ navigator.geolocation.getCurrentPosition(
         latitude: -1.3631488,
         longitude: -48.4671488,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5593992145422", 
+        telefone: "(93) 2101-7373",
         email: `vendas112@norteautopeças.com.br`
       },
       {
         nome: '114',
         nomeLoja: "Norte - Itaituba",
-        latitude: -4.2537166,
-        longitude: -56.0035462,
+        latitude: -4.2729472,
+        longitude: -55.9874048,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5593992356266", 
+        telefone: "(93) 3518-1734",
         email: `vendas114@norteautopeças.com.br`
       },
       {
         nome: '115',
         nomeLoja: "Norte - Cacoal",
-        latitude: -11.4392994,
-        longitude: -61.4542333,
+        latitude: -11.4425856,
+        longitude: -61.4531072,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5569981149539", 
+        telefone: "(69) 3180-0115",
         email: `vendas115@norteautopeças.com.br`
       },
       {
@@ -297,8 +299,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -2.4543232,
         longitude: -54.7291136,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5593991088845", 
+        telefone: "(93) 2101-6801",
         email: `vendas201@norteautopeças.com.br`
       },
       {
@@ -307,8 +309,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -5.3613466,
         longitude: -49.0794125,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5594991126870", 
+        telefone: "(94) 2101-1777",
         email: `vendas202@norteautopeças.com.br`
       },
       {
@@ -317,8 +319,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -3.2122637,
         longitude: -52.2322213,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5593992301909", 
+        telefone: "(93) 3515-2133",
         email: `vendas203@norteautopeças.com.br`
       },
       {
@@ -327,8 +329,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: 0.0774784,
         longitude: -51.0656303,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5596991157435", 
+        telefone: "(96) 3251-7917",
         email: `vendas204@norteautopeças.com.br`
       },
       {
@@ -337,8 +339,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -1.370983,
         longitude: -48.3618731,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5591932551644", 
+        telefone: "(91) 93255-1644",
         email: `vendas205@norteautopeças.com.br`
       },
       {
@@ -347,8 +349,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -6.0796246,
         longitude: -49.8670794,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5594992169962", 
+        telefone: "(94) 3352-0364",
         email: `vendas206@norteautopeças.com.br`
       },
       {
@@ -357,8 +359,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -7.0328241,
         longitude: -55.4175541,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5593984308792", 
+        telefone: "(93) 3538-2754",
         email: `vendas207@norteautopeças.com.br`
       },
       {
@@ -367,8 +369,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -3.0517867,
         longitude: -59.985839,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5592984275221", 
+        telefone: "(92) 3396-5200",
         email: `vendas301@norteautopeças.com.br`
       },
       {
@@ -377,8 +379,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -2.9986227,
         longitude: -60.0145096,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5592981590626", 
+        telefone: "(92) 98159-0626",
         email: `vendas302@norteautopeças.com.br`
       },
       {
@@ -387,8 +389,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: 2.8019255,
         longitude: -60.694431,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5595981120280", 
+        telefone: "(95) 3626-5499",
         email: `vendas303@norteautopeças.com.br`
       },
       {
@@ -397,8 +399,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: 2.8201189,
         longitude: -60.6947645,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5595984116081", 
+        telefone: "(95) 3628-9302",
         email: `vendas401@norteautopeças.com.br`
       },
       // { nome: '402', latitude: , longitude: },
@@ -410,8 +412,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -5.080419,
         longitude: -45.6007108,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5599991064682", 
+        telefone: "(99) 99106-4682",
         email: `vendas501@norteautopeças.com.br`
       },
       {
@@ -420,8 +422,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -7.5300864,
         longitude: -46.0455936,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5599991152515", 
+        telefone: "(99) 3542-5994",
         email: `vendas502@norteautopeças.com.br`
       },
       {
@@ -430,8 +432,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -2.6173989,
         longitude: -44.2548369,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5598992181588", 
+        telefone: "(98) 98422-9075",
         email: `vendas503@norteautopeças.com.br`
       },
       {
@@ -440,8 +442,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -10.8941543,
         longitude: -61.9293508,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5569981149548", 
+        telefone: "(69) 98114-9548",
         email: `vendas601@norteautopeças.com.br`
       },
       // { nome: '801', latitude: , longitude: },
@@ -451,8 +453,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -8.0443914,
         longitude: -50.0260215,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5594992603939", 
+        telefone: "(94) 99260-3939",
         email: `vendas802@norteautopeças.com.br`
       },
       {
@@ -461,8 +463,8 @@ navigator.geolocation.getCurrentPosition(
         latitude: -14.8610929,
         longitude: -40.8499632,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5577998162961", 
+        telefone: "(77) 3421-9707",
         email: `vendas701@norteautopeças.com.br`
       },
       {
@@ -471,13 +473,10 @@ navigator.geolocation.getCurrentPosition(
         latitude: -19.9131136,
         longitude: -44.0434688,
         endereco: "Av. Torquato Tapajós, 923, bairro da paz Manaus/AM - Cep: 69049-110",
-        whatsapp: "92984583209", 
-        telefone: "922129-1500",
+        whatsapp: "+5531984756347", 
+        telefone: "(31) 98475-7324",
         email: `vendas901@norteautopeças.com.br`
       },
-
-
-
 
 
       // Adicione as coordenadas de todas as suas lojas

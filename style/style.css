@@ -367,7 +367,7 @@ footer {
 
 .NossasLojasAbout a {
   width: 325px;
-  background-color: #0e007c;
+  background-color: #031586;
   padding: 13px 60px;
   border-radius: 10px;
 }
@@ -420,12 +420,14 @@ footer {
 
 .campoSobreNosText a {
   width: 325px;
-  background-color: #0e007c;
+  background-color: #031586;
   padding: 13px 60px;
   border-radius: 10px;
   margin: 30px 0 0 0;
 }
-
+.campoSobreNosText a:hover {
+  background-color: #090054;
+}
 
 /*Novidades*/
 .cardMvv {
