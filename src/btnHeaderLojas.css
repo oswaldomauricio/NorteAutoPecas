@@ -134,7 +134,11 @@
     background-color: #f0f0f0;
 }
 
-
+.cardLojasInformacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
 @media (max-width: 640px) {
     .cardLojas {
@@ -148,9 +152,14 @@
 
     .cardMapa img {
         width: 400px;
-    }
-
 }
+}
+.cardLojasInformacao {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
 
 @media (max-width: 540px) {
     .cardLojas {
@@ -176,10 +185,6 @@
 
     .cardLojas img {
         display: none;
-    }
-
-    .cardLojasInformacao {
-        padding: 0 0px;
     }
 
     .cardlojasContatos span {
