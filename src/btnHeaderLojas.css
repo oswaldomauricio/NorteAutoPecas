@@ -99,17 +99,21 @@
     display: flex;
     align-items: center;
 }
-.spanEndereco, .enderecoLoja{
+
+.spanEndereco,
+.enderecoLoja {
     font-size: 14px;
     font-weight: 500;
     padding: 0 0 5px 0;
 }
-.enderecoLoja{
+
+.enderecoLoja {
     font-size: 14px;
     font-weight: 500;
     padding: 0 0 5px 0;
 }
-.email{
+
+.email {
     color: #1602ac;
     padding: 0 0 5px 0;
 }
@@ -120,7 +124,7 @@
 
 
 .textoSemLoja {
-    background-color: #fff;
+    background-color: #dbdbdb;
     padding: 40px 10px;
     font-size: 20px;
     cursor: pointer;
@@ -132,29 +136,63 @@
 
 
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
     .cardLojas {
         width: 500px;
     }
+
+    .cardMapa {
+        width: 500px;
+        flex-direction: column-reverse;
+    }
+
+    .cardMapa img {
+        width: 400px;
+    }
+
 }
-@media (max-width: 540px){
+
+@media (max-width: 540px) {
     .cardLojas {
         width: 450px;
     }
+
+    .cardMapa img {
+        width: 314px;
+    }
+
+    .cardLojasInformacao {
+        display: flex;
+        padding: 0 0px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media (max-width: 470px){
+@media (max-width: 470px) {
     .cardLojas {
         width: 300px;
     }
-    .cardLojas img{
+
+    .cardLojas img {
         display: none;
     }
-    .cardLojasInformacao  {
+
+    .cardLojasInformacao {
         padding: 0 0px;
     }
+
     .cardlojasContatos span {
         padding: 0 6px;
     }
-}
 
+    .cardMapa {
+        width: 360px;
+        flex-direction: column-reverse;
+    }
+    #svg-map {
+        width: 350px;
+        height: 360px;
+        cursor: pointer;
+    }
+}

@@ -110,20 +110,14 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       cardClone.querySelector('.imgCard').src = loja.imgLoja;
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
-
       cardClone.querySelector('.linkEndereco').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
       cardClone.querySelector('.linkEndereco').target = "_blank";
-
       cardClone.querySelector('.email').innerText = loja.email;
       cardClone.querySelector('.linkEmail').href = `mailto:${loja.email}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.`;
-      
       cardClone.querySelector('.linkWpp').href = `https://api.whatsapp.com/send/?phone=+55${loja.whatsapp}&text=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
       cardClone.querySelector('.linkWpp').target = "_blank"
-
       cardClone.querySelector('.linkTel').href = `tel:+55:${loja.telefone}`;
       cardClone.querySelector('.linkTel').target = "_self"
-
-
       cardClone.querySelector('.whatsapp').innerText = loja.whatsapp;
       cardClone.querySelector('.telefone').innerText = loja.telefone;
 
