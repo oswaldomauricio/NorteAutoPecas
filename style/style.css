@@ -108,6 +108,32 @@
   color: #0E007C;
 }
 
+.FonteMain1 div {
+  width: 240px;
+  height: 6px;
+  /* padding: 6px 240px; */
+  background-color: #ff0000;
+}
+
+.FonteMain1 h2 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0E007C;
+}
+
+.FonteMain1 h1 {
+  font-size: 44px;
+  font-weight: 600;
+  color: #0E007C;
+}
+
+.FonteMain1 {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 
 /* <div class="FonteMain">
       <h2>Nossas Lojas</h2>
@@ -570,6 +596,54 @@ footer {
       font-size: 14px;
     }
   }
+  .FonteMain div {
+    width: 240px;
+    height: 6px;
+    /* padding: 6px 240px; */
+    background-color: #ff0000;
+  }
+  
+  .FonteMain h2 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #0E007C;
+  }
+  .FonteMain {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .FonteMain h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #0E007C;
+  }
+  
+  .FonteMain1 div {
+    width: 240px;
+    height: 6px;
+    /* padding: 6px 240px; */
+    background-color: #ff0000;
+  }
+  
+  .FonteMain1 h2 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #0E007C;
+  }
+  
+  .FonteMain1 h1 {
+    font-size: 44px;
+    font-weight: 600;
+    color: #0E007C;
+  }
+  
+  .FonteMain1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -587,11 +661,7 @@ footer {
       margin: 0 0 22px 0;
     }
 
-    .FonteMain {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
+
 
     .NossasLojas p,
     a {
@@ -666,7 +736,6 @@ footer {
     .close {
       display: none;
     }
-
 
     /*fim menu header celular*/
     .LogoNorteAzul {
@@ -862,6 +931,9 @@ footer {
         width: 320px;
         margin: 40px 0 0 0;
         color: #fff;
+      }
+      .FonteMainMobile{
+        display: none;
       }
 
       .campoSobreNosText p {

@@ -70,6 +70,7 @@ const stateClicked = (state) => {
 const fillContent = ({ nome, sigla, lojas, code }) => {
   const name = document.getElementById('stateName');
   const haveLoja = document.getElementById('stateDesc');
+  const haveLoja1 = document.getElementById('stateDesc1');
   const cardMapa = document.querySelector('.cardMapa');
   const mapaFull = document.querySelector('.mapaFull');
   const cardTemplate = document.querySelector('.cardTemplate');
@@ -125,6 +126,7 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
     });
 
     haveLoja.innerHTML = "Selecione um estado:";
+    haveLoja1.innerHTML = "Selecione um estado:";
   } else {
     mapaFull.style.display = "none";
     haveLoja.innerHTML = "Nenhuma loja disponível:";
