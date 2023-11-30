@@ -129,3 +129,32 @@
 .textoSemLoja:hover {
     background-color: #f0f0f0;
 }
+
+
+
+@media (max-width: 640px){
+    .cardLojas {
+        width: 500px;
+    }
+}
+@media (max-width: 540px){
+    .cardLojas {
+        width: 450px;
+    }
+}
+
+@media (max-width: 470px){
+    .cardLojas {
+        width: 300px;
+    }
+    .cardLojas img{
+        display: none;
+    }
+    .cardLojasInformacao  {
+        padding: 0 0px;
+    }
+    .cardlojasContatos span {
+        padding: 0 6px;
+    }
+}
+

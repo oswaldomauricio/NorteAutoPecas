@@ -88,11 +88,10 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
                             <img class="imgCard" src="${loja.imgLoja}" alt="">
                             <div class="cardLojasInformacao">
                               <h2 class="nomeLoja">${loja.nomeLoja}</h2>
-                              <span class="enderecoLoja">${loja.enderecoLoja}</span>
+                              <a class="linkEndereco" href="${loja.enderecoLoja}"><span class="enderecoLoja">${loja.enderecoLoja}</span></a>
                               <a class="linkEmail" href=mailto:${linkEmail}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês."><span class="email">${loja.email}</span></a>
                               <div class="cardLojasContatos">
                                 <a class="linkWpp" href=""><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></a>
-        
                                 <a class="linkTel" href="" ><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></a>
                               </div>
                             </div>
@@ -111,9 +110,13 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       cardClone.querySelector('.imgCard').src = loja.imgLoja;
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
+
+      cardClone.querySelector('.linkEndereco').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
+      cardClone.querySelector('.linkEndereco').target = "_blank";
+
       cardClone.querySelector('.email').innerText = loja.email;
       cardClone.querySelector('.linkEmail').href = `mailto:${loja.email}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.`;
-
+      
       cardClone.querySelector('.linkWpp').href = `https://api.whatsapp.com/send/?phone=+55${loja.whatsapp}&text=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
       cardClone.querySelector('.linkWpp').target = "_blank"
 
