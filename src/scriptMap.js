@@ -68,14 +68,16 @@ const stateClicked = (state) => {
 
 
 const fillContent = ({ nome, sigla, lojas, code }) => {
-  const name = document.getElementById('stateName');
-  const haveLoja = document.getElementById('stateDesc');
-  const haveLoja1 = document.getElementById('stateDesc1');
+  const name = document.querySelector('.stateName');
+  const nameMobile = document.querySelector('.stateName1');
+  const haveLoja = document.querySelector('.stateDesc');
+  const haveLoja1 = document.querySelector('.stateDesc1');
   const cardMapa = document.querySelector('.cardMapa');
   const mapaFull = document.querySelector('.mapaFull');
   const cardTemplate = document.querySelector('.cardTemplate');
 
   name.innerHTML = `${nome} - ${sigla}`;
+  nameMobile.innerHTML = `${nome} - ${sigla}`
   if (lojas && lojas.length > 0) {
     cardMapa.style.display = "flex";
     console.log(code);
@@ -130,6 +132,8 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
   } else {
     mapaFull.style.display = "none";
     haveLoja.innerHTML = "Nenhuma loja disponível:";
+    haveLoja1.innerHTML = "Nenhuma loja disponível:";
+
   }
 };
 

@@ -4,6 +4,7 @@
 
 #svg-map ,#svg-map path {
     fill: #3355D0;
+    margin: 30px 0;
 }
 
 /* #svg-map a:hover .circle, #svg-map a:hover path {
@@ -35,6 +36,7 @@
 .selecionarLojas{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     width: 100%;
 }
 
@@ -79,6 +81,7 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+
     }
     .secaoLojas {
         display: flex;
