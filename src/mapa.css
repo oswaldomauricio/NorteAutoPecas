@@ -127,5 +127,9 @@ footer {
 .cardLojasContatos .whatsapp, .cardLojasContatos .telefone {
   padding: 0 0px 0 10px;
   font-size: 14px;
+  color:  rgb(0, 124, 48);
+}
+.cardLojasContatos .whatsapp:hover, .cardLojasContatos .telefone:hover {
   color: #0E007C;
 }
+
