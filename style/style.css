@@ -123,7 +123,7 @@
 }
 
 .FonteMain1 h1 {
-  font-size: 44px;
+  font-size: 30px;
   font-weight: 600;
   color: #0E007C;
 }
@@ -635,7 +635,7 @@ footer {
   }
   
   .FonteMain1 h1 {
-    font-size: 44px;
+    font-size: 30px;
     font-weight: 600;
     color: #0E007C;
   }
@@ -644,6 +644,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 30px;
   }
 }
 
