@@ -55,6 +55,7 @@ function obterCoordenadas() {
       },
       function (error) {
         console.error(`Erro ao obter coordenadas: ${error.message}`);
+        alert("Você negou o acesso a sua localização, alguns recursos do site podem ser afetados.")
       }
     );
   } else {
