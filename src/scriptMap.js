@@ -95,7 +95,11 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
                               <a class="linkEmail" href=mailto:${linkEmail}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês."><span class="email">${loja.email}</span></a>
                               <div class="cardLojasContatos">
                                 <a class="linkWpp" href=""><i class="fa-brands fa-whatsapp"><span class="whatsapp">${loja.whatsapp}</span></i></a>
-                                <a class="linkTel" href="" ><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></a>
+                                <a class="linkTel telefoneImg" href="" ><i class="fa-solid fa-phone"><span class="telefone">${loja.telefone}</span></i></a>
+                              </div>
+                              <div class="segmentacaoLoja">
+                                <div class="segmentacao">${loja.segmentacao}</div>
+                                <div class="segmentacao2">${loja.segmentacao2}</div>
                               </div>
                             </div>
                           </div>
@@ -107,24 +111,49 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       mapaFull.style.display = "flex";
     });
 
+
     // Use cloneNode para criar cópias do cardTemplate
     lojas.forEach(loja => {
       let cardClone = cardTemplate.cloneNode(true);
+      if (loja.segmentacao === "Linha Leve") {
+        cardClone.querySelector('.segmentacao').style.backgroundColor = "#37c300";
+        cardClone.querySelector('.segmentacao').innerHTML = "Linha Leve";
+      }
+      if (loja.segmentacao === "Linha Pesada") {
+        cardClone.querySelector('.segmentacao').style.backgroundColor = "#1600C3";
+        cardClone.querySelector('.segmentacao').innerHTML = "Linha Leve"; 
+      }
+      if (loja.segmentacao2 === "Linha Leve") {
+        cardClone.querySelector('.segmentacao2').style.backgroundColor = "#37c300";
+        cardClone.querySelector('.segmentacao2').innerHTML = "Linha Leve"; 
+      }
+      if (loja.segmentacao2 === undefined) {
+        cardClone.querySelector('.segmentacao2').style.display = "none"
+      }
+      
       cardClone.querySelector('.imgCard').src = loja.imgLoja;
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
       cardClone.querySelector('.linkEndereco').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
       cardClone.querySelector('.linkEndereco').target = "_blank";
       cardClone.querySelector('.email').innerText = loja.email;
+      cardClone.querySelector('.segmentacao').innerText = loja.segmentacao;
       cardClone.querySelector('.linkEmail').href = `mailto:${loja.email}?subject=Assunto do Email&body=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.`;
       cardClone.querySelector('.linkWpp').href = `https://api.whatsapp.com/send/?phone=+55${loja.whatsapp}&text=Olá, vim pelo site da Norte Auto Peças e gostaria de fazer uma cotação com vocês.&type=phone_number&app_absent=0`;
       cardClone.querySelector('.linkWpp').target = "_blank"
       cardClone.querySelector('.linkTel').href = `tel:+55:${loja.telefone}`;
       cardClone.querySelector('.linkTel').target = "_self"
       cardClone.querySelector('.whatsapp').innerText = loja.whatsapp;
-      cardClone.querySelector('.telefone').innerText = loja.telefone;
+      if (loja.telefone === undefined) {
+        cardClone.querySelector(".telefoneImg i").style.display = "none"
+        cardClone.querySelector('.telefone').style.display = "none";
 
+
+      }else{
+        cardClone.querySelector('.telefone').innerText = loja.telefone;
+      }
       mapaFull.appendChild(cardClone);
+      
     });
 
     haveLoja.innerHTML = "Selecione um estado:";

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body{
+body {
   max-height: 100%;
   font-family: 'Poppins', sans-serif;
 
@@ -12,6 +12,7 @@ body{
   max-width: 100%;
   max-height: 100%;
 }
+
 .secMap {
   display: flex;
   flex-direction: row;
@@ -35,7 +36,8 @@ body{
 .FonteMain {
   margin: 0 0 10px 0;
 }
-.FonteMain p{
+
+.FonteMain p {
   padding: 20px 0 0;
 }
 
@@ -51,6 +53,7 @@ footer {
   margin: 0 0 100px 0;
   overflow-y: scroll;
 }
+
 .secCard {
   scrollbar-width: thin;
   scrollbar-color: #fff #141414;
@@ -74,7 +77,7 @@ footer {
 
 .cardMapa {
   display: none;
-  padding: 10px 10px;
+  padding: 10px 15px;
   margin: 10px 0;
   border-radius: 16px;
   background-color: #f5f5f5;
@@ -99,6 +102,7 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
+
 .cardLojasInformacao a {
   color: #000;
 }
@@ -118,18 +122,42 @@ footer {
   border-radius: 16px;
   object-fit: cover;
 }
+.cardMapa img:hover {
+  transform: scale(1.02 , 1.02);
+  transform-origin: left;
+}
 
 .cardLojasContatos {
   display: flex;
-  padding: 12px 0;
+  padding: 0 0 10px 0;
 }
 
-.cardLojasContatos .whatsapp, .cardLojasContatos .telefone {
+.cardLojasContatos .whatsapp,
+.cardLojasContatos .telefone {
   padding: 0 0px 0 10px;
   font-size: 14px;
-  color:  rgb(0, 124, 48);
-}
-.cardLojasContatos .whatsapp:hover, .cardLojasContatos .telefone:hover {
   color: #0E007C;
 }
 
+.cardLojasContatos .whatsapp:hover,
+.cardLojasContatos .telefone:hover {
+  text-decoration: underline;
+}
+
+.segmentacao, .segmentacao2 {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  border-radius: 24px;
+  color: #fff;
+}
+
+.segmentacao span {
+  font: 900;
+}
+
+.segmentacaoLoja {
+  display: flex;
+  gap: 20px;
+  padding: 0 0 15px 0;
+}

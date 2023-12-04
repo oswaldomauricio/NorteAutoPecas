@@ -11,7 +11,8 @@
                 "imgLoja": "style/public/img/FotoLoja/107/107.jpeg",
                 "whatsapp": "(68) 99232-6703",
                 "telefone": "(68) 32215620",
-                "email": "vendas107@norteautopecas.com.br"
+                "email": "vendas107@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 111,
@@ -20,7 +21,8 @@
                 "imgLoja": "style/public/img/FotoLoja/111/111.jpeg",
                 "whatsapp": "(68) 9207-2406",
                 "telefone": "(68) 2106-8888",
-                "email": "vendas111@norteautopecas.com.br"
+                "email": "vendas111@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -43,7 +45,8 @@
                 "imgLoja": "style/public/img/FotoLoja/204/204.jpeg",
                 "whatsapp": "(96) 99115-7435",
                 "telefone": "(96) 3251-7917",
-                "email": "vendas204@norteautopecas.com.br"
+                "email": "vendas204@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
         
@@ -60,7 +63,8 @@
                 "imgLoja": "style/public/img/FotoLoja/101/101.jpg",
                 "whatsapp": "(92) 98112-8981",
                 "telefone": "(92) 2129-1500",
-                "email": "vendas101@norteautopecas.com.br"
+                "email": "vendas101@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 102,
@@ -69,7 +73,10 @@
                 "imgLoja": "style/public/img/FotoLoja/102/102.jpeg",
                 "whatsapp": "(92) 98428-5270",
                 "telefone": "(92) 3301-7450",
-                "email": "vendas102@norteautopecas.com.br"
+                "email": "vendas102@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada",
+                "segmentacao2": "Linha Leve"
+                
             },
             {
                 "codeLoja": 104,
@@ -78,7 +85,8 @@
                 "imgLoja": "style/public/img/FotoLoja/104/104.jpeg",
                 "whatsapp": "(92) 98112-6755",
                 "telefone": "(92) 3878-4850",
-                "email": "vendas104@norteautopecas.com.br"
+                "email": "vendas104@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 108,
@@ -87,7 +95,8 @@
                 "imgLoja": "style/public/img/FotoLoja/108/108.jpeg",
                 "whatsapp": "(92) 98159-1853",
                 "telefone": "(92) 3314-2650",
-                "email": "vendas108@norteautopeças.com.br"
+                "email": "vendas108@norteautopeças.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 110,
@@ -96,7 +105,8 @@
                 "imgLoja": "style/public/img/FotoLoja/110/110.jpeg",
                 "whatsapp": "(92) 98159-3151",
                 "telefone": "(92) 3652-3850",
-                "email": "vendas110@norteautopecas.com.br"
+                "email": "vendas110@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 301,
@@ -105,7 +115,9 @@
                 "imgLoja": "style/public/img/FotoLoja/301/301.jpeg",
                 "whatsapp": "(92) 98427-5221",
                 "telefone": "(92) 3396-5200",
-                "email": "vendas301@norteautopecas.com.br"
+                "email": "vendas301@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada",
+                "segmentacao2": "Linha Leve"
             },
             {
                 "codeLoja": 302,
@@ -113,7 +125,8 @@
                 "enderecoLoja": "Av. José Henrique B. Rodrigues, n° 2202, Colonia Terra Nova - Manaus/AM",
                 "imgLoja": "style/public/img/FotoLoja/302/302.jpg",
                 "whatsapp": "(92) 98159-0626",
-                "email": "vendas302@norteautopecas.com.br"
+                "email": "vendas302@norteautopecas.com.br",
+                "segmentacao": "Linha Leve"
             },
             {
                 "codeLoja": 402,
@@ -122,7 +135,8 @@
                 "imgLoja": "style/public/img/FotoLoja/402/402.jpeg",
                 "whatsapp": "(92) 98458-3169",
                 "telefone": "(51) 3030-2020",
-                "email": "vendas402@norteautopecas.com.br"
+                "email": "vendas402@norteautopecas.com.br",
+                "segmentacao": "Linha Leve"
             },
             {
                 "codeLoja": 403,
@@ -131,7 +145,8 @@
                 "imgLoja": "",
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
-                "email": "vendas403@norteautopecas.com.br"
+                "email": "vendas403@norteautopecas.com.br",
+                "segmentacao": "Linha Leve"
             }
         ]
     },
@@ -147,7 +162,8 @@
                 "imgLoja": "style/public/img/FotoLoja/701/701.jpeg",
                 "whatsapp": "(77) 99816-2961",
                 "telefone": "(77) 3421-9707",
-                "email": "vendas701@norteautopecas.com.br"
+                "email": "vendas701@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -191,7 +207,8 @@
                 "imgLoja": "style/public/img/FotoLoja/501/501.jpeg",
                 "whatsapp": "(99) 99106-4682",
                 "telefone": "(99) 99106-4682",
-                "email": "vendas501@norteautopecas.com.br"
+                "email": "vendas501@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 502,
@@ -200,7 +217,8 @@
                 "imgLoja": "style/public/img/FotoLoja/502/502.jpeg",
                 "whatsapp": "(99) 99115-2515",
                 "telefone": "(99) 3542-5994",
-                "email": "vendas502@norteautopecas.com.br"
+                "email": "vendas502@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 503,
@@ -209,7 +227,8 @@
                 "imgLoja": "style/public/img/FotoLoja/503/503.jpeg",
                 "whatsapp": "(98) 99218-1588",
                 "telefone": "(98) 98422-9075",
-                "email": "vendas503@norteautopeças.com.br"
+                "email": "vendas503@norteautopeças.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -239,7 +258,8 @@
                 "imgLoja": "style/public/img/FotoLoja/901/901.jpeg",
                 "whatsapp": "(31) 98475-6347",
                 "telefone": "(31) 98475-7324",
-                "email": "vendas901@norteautopecas.com.br"
+                "email": "vendas901@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -255,7 +275,8 @@
                 "imgLoja": "style/public/img/FotoLoja/112/112.jpeg",
                 "whatsapp": "(93) 99214-5422",
                 "telefone": "(93) 2101-7373",
-                "email": "vendas112@norteautopecas.com.br"
+                "email": "vendas112@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 114,
@@ -264,7 +285,8 @@
                 "imgLoja": "style/public/img/FotoLoja/114/114.jpg",
                 "whatsapp": "(93) 99235-6266",
                 "telefone": "(93) 3518-1734",
-                "email": "vendas114@norteautopecas.com.br"
+                "email": "vendas114@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 201,
@@ -273,7 +295,8 @@
                 "imgLoja": "style/public/img/FotoLoja/201/201.jpeg",
                 "whatsapp": "(93) 99108-8845",
                 "telefone": "(93) 2101-6801",
-                "email": "vendas201@norteautopecas.com.br"
+                "email": "vendas201@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 202,
@@ -282,7 +305,8 @@
                 "imgLoja": "style/public/img/FotoLoja/202/202.jpeg",
                 "whatsapp": "(94) 99112-6870",
                 "telefone": "(94) 2101-1777",
-                "email": "vendas202@norteautopecas.com.br"
+                "email": "vendas202@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 203,
@@ -291,7 +315,8 @@
                 "imgLoja": "style/public/img/FotoLoja/203/203.jpeg",
                 "whatsapp": "(93) 99230-1909",
                 "telefone": "(93) 3515-2133",
-                "email": "vendas203@norteautopecas.com.br"
+                "email": "vendas203@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 205,
@@ -299,7 +324,8 @@
                 "enderecoLoja": "ROD. Alca Viaria KM 01, n° 26, São João - Pará/PA",
                 "imgLoja": "style/public/img/FotoLoja/205/205.jpeg",
                 "whatsapp": "(91) 93255-1644",
-                "email": "vendas205@norteautopecas.com.br"
+                "email": "vendas205@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 206,
@@ -308,7 +334,8 @@
                 "imgLoja": "style/public/img/FotoLoja/206/206.jpeg",
                 "whatsapp": "(94) 99216-9962",
                 "telefone": "(94) 3352-0364",
-                "email": "vendas206@norteautopecas.com.br"
+                "email": "vendas206@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 207,
@@ -317,7 +344,8 @@
                 "imgLoja": "style/public/img/FotoLoja/207/207.jpeg",
                 "whatsapp": "(93) 98430-8792",
                 "telefone": "(93) 3538-2754",
-                "email": "vendas207@norteautopecas.com.br"
+                "email": "vendas207@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 802,
@@ -325,7 +353,8 @@
                 "enderecoLoja": "Av. Araguaia, n° 1872, Alto Paraná - Pará/PA",
                 "imgLoja": "style/public/img/FotoLoja/802/802.jpeg",
                 "whatsapp": "(94) 99260-3939",
-                "email": "vendas802@norteautopecas.com.br"
+                "email": "vendas802@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -390,7 +419,8 @@
                 "imgLoja": "style/public/img/FotoLoja/105/105.jpeg",
                 "whatsapp": "(69) 98116-0201",
                 "telefone": "(69) 3210-4448",
-                "email": "vendas105@norteautopecas.com.br"
+                "email": "vendas105@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 106,
@@ -399,7 +429,8 @@
                 "imgLoja": "style/public/img/FotoLoja/106/106.jpeg",
                 "whatsapp": "(69) 98116-0110",
                 "telefone": "(69) 3536-0405",
-                "email": "vendas106@norteautopecas.com.br"
+                "email": "vendas106@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 109,
@@ -408,7 +439,8 @@
                 "imgLoja": "style/public/img/FotoLoja/109/109.jpeg",
                 "whatsapp": "(69) 98114-9573",
                 "telefone": "69981149573",
-                "email": "vendas109@norteautopecas.com.br"
+                "email": "vendas109@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 115,
@@ -417,7 +449,8 @@
                 "imgLoja": "style/public/img/FotoLoja/115/115.jpeg",
                 "whatsapp": "(69) 98114-9539",
                 "telefone": "(69) 3180-0115",
-                "email": "vendas115@norteautopecas.com.br"
+                "email": "vendas115@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 601,
@@ -425,7 +458,8 @@
                 "enderecoLoja": "Av. Castelo Branco, n° 982, Riachuelo - Rondônia/RO",
                 "imgLoja": "style/public/img/FotoLoja/601/601.jpeg",
                 "whatsapp": "(69) 98114-9548",
-                "email": "vendas601@norteautopecas.com.br"
+                "email": "vendas601@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },
@@ -441,7 +475,8 @@
                 "imgLoja": "style/public/img/FotoLoja/103/103.jpeg",
                 "whatsapp": "(95) 98112-0319",
                 "telefone": "(95) 3198-2900",
-                "email": "vendas103@norteautopecas.com.br"
+                "email": "vendas103@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 303,
@@ -450,7 +485,8 @@
                 "imgLoja": "style/public/img/FotoLoja/303/303.jpeg",
                 "whatsapp": "(95) 98112-0280",
                 "telefone": "(95) 3626-5499",
-                "email": "vendas303@norteautopecas.com.br"
+                "email": "vendas303@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             },
             {
                 "codeLoja": 401,
@@ -459,7 +495,8 @@
                 "imgLoja": "style/public/img/FotoLoja/401/401.jpeg",
                 "whatsapp": "(95) 98411-6081",
                 "telefone": "(95) 3628-9302",
-                "email": "vendas401@norteautopecas.com.br"
+                "email": "vendas401@norteautopecas.com.br",
+                "segmentacao": "Linha Pesada"
             }
         ]
     },

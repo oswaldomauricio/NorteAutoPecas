@@ -82,6 +82,9 @@
     padding: 0 10px;
     display: flex;
 }
+.cardlojasContatos span:hover {
+    text-decoration: underline;
+}
 
 .cardlojasContatos i {
     font-style: normal;
@@ -106,17 +109,28 @@
     font-weight: 500;
     padding: 0 0 5px 0;
 }
+.spanEndereco:hover,
+.enderecoLoja:hover {
+    text-decoration: underline;
+}
 
 .enderecoLoja {
     font-size: 14px;
     font-weight: 500;
     padding: 0 0 5px 0;
 }
+.enderecoLoja:hover {
+    text-decoration: underline;
+}
 
 .email {
     color: #1602ac;
     padding: 0 0 5px 0;
 }
+.email:hover {
+text-decoration: underline;
+}
+
 
 .close {
     display: none;
