@@ -373,12 +373,20 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 125px 0 125px 0;
+  margin: 0px 0 0 0;
   align-items: center;
+
 }
 
 .NossasLojas img {
   width: 600px;
+  margin: 125px 0 180px 0;
+}
+
+.LojasSecao{
+  background-image: url(public/img/Fornecedores/FundoSobreNos.svg);
+  background-repeat: repeat;
+  background-position: top;
 }
 
 .NossasLojasAbout {
@@ -430,7 +438,11 @@ footer {
   margin: 0 0 50px 0;
 }
 
-
+/* .LojasSecao{
+  background-image: url(public/img/Fornecedores/FundoSobreNos.svg);
+  background-position: center;
+  height: 100%;
+} */
 /* Sobre nos*/
 
 .sobre div {
@@ -549,6 +561,14 @@ footer {
       width: 1000px;
       max-width: 100%;
       max-height: 100%;
+    }
+    .NossasLojas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 125px 0 125px 0;
+      align-items: center;
+
     }
 
     .campoSobreNosText p {
@@ -759,6 +779,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
+      
     }
 
     .noticias {
