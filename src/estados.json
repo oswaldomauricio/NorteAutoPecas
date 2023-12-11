@@ -126,7 +126,8 @@
                 "imgLoja": "style/public/img/FotoLoja/302/302.jpg",
                 "whatsapp": "(92) 98159-0626",
                 "email": "vendas302@norteautopecas.com.br",
-                "segmentacao": "Linha Leve"
+                "segmentacao": "Linha Pesada",
+                "segmentacao2": "Linha Leve"
             },
             {
                 "codeLoja": 402,
@@ -136,7 +137,7 @@
                 "whatsapp": "(92) 98458-3169",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas402@norteautopecas.com.br",
-                "segmentacao": "Linha Leve"
+                "segmentacao2": "Linha Leve"
             },
             {
                 "codeLoja": 403,
@@ -146,7 +147,8 @@
                 "whatsapp": "(51) 98765-4321",
                 "telefone": "(51) 3030-2020",
                 "email": "vendas403@norteautopecas.com.br",
-                "segmentacao": "Linha Leve"
+                "segmentacao": "Linha Pesada",
+                "segmentacao2": "Linha Leve"
             }
         ]
     },

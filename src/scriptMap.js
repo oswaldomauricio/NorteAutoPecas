@@ -116,15 +116,15 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
     lojas.forEach(loja => {
       let cardClone = cardTemplate.cloneNode(true);
       if (loja.segmentacao === "Linha Leve") {
-        cardClone.querySelector('.segmentacao').style.backgroundColor = "#37c300";
+        cardClone.querySelector('.segmentacao').style.backgroundColor = "#1600C3";
         cardClone.querySelector('.segmentacao').innerHTML = "Linha Leve";
       }
       if (loja.segmentacao === "Linha Pesada") {
-        cardClone.querySelector('.segmentacao').style.backgroundColor = "#1600C3";
+        cardClone.querySelector('.segmentacao').style.backgroundColor = "red";
         cardClone.querySelector('.segmentacao').innerHTML = "Linha Leve"; 
       }
       if (loja.segmentacao2 === "Linha Leve") {
-        cardClone.querySelector('.segmentacao2').style.backgroundColor = "#37c300";
+        cardClone.querySelector('.segmentacao2').style.backgroundColor = "#1600C3";
         cardClone.querySelector('.segmentacao2').innerHTML = "Linha Leve"; 
       }
       if (loja.segmentacao2 === undefined) {

@@ -44,7 +44,7 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
             justify-content: center;
         }
 
@@ -182,48 +182,38 @@
         </section>
 
         <section class="formulario">
-            <form action="https://oswaldoteste.000webhostapp.com//trabalheConosco.php" method="POST">
-
-                <!-- <input type="hidden" name="_next" value="trocar para o dominio que irá ser o site"> -->
-
-                <label for="nome">Nome:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="#">Selecione seu estado:</label>
-                <select id="estado" name="estado" required>
-                    <option value="" disabled selected>Selecione um estado</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="AC">Acre</option>
-                    <option value="AP">Amapá</option>
-                    <option value="BA">Bahia</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="PA">Pará</option>
-                </select>
-
-                <label for="Cidade">Cidade:</label>
-                <input type="mensagem" id="Cidade" name="Cidade" required>
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <input type="text" name="_honey" style="display:none">
-
-                <!-- Campo de entrada de arquivo para PDF -->
-                <label for="arquivo">Enviar PDF:</label>
-                <input type="file" id="arquivo" name="arquivo" accept=".pdf" required>
-
-                <button type="submit">Enviar</button>
-                <input type="hidden" name="_captcha" value="false">
-            </form>
+            <div class="container">
+                <form action="./src/trabalheConosco.php" method="POST" enctype="multipart/form-data">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Nome completo" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email valido:" required>
+                    <label for="#">Selecione seu estado:</label>
+                    <select id="estado" name="estado" required>
+                        <option value="" disabled selected>Selecione um estado</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="PA">Pará</option>
+                    </select>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="city" name="city" placeholder="Digite o nome da sua cidade:" required>
+                    <label for="telefone" >Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone:" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua carta de apresentação:" required></textarea>
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- Campo de entrada de arquivo para PDF -->
+                    <label for="arquivo">Enviar PDF:</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".pdf" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
         </div>
 
@@ -308,7 +298,6 @@
 
     <!-- Scripts da propria pagina -->
     <script src="index.js" type="text/javascript"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
     <script src="src/slides.js"></script>
     <script src="src/slideForn.js"></script>
     <script defer src="src/localizacao.js"></script>
