@@ -88,7 +88,7 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       const linkEmail = `=mailto:${loja.email}`;
       let estrutura = `<div class="cardTemplate">
         <div class="cardMapa">
-                            <img class="imgCard" src="${loja.imgLoja}" alt="">
+                            <a class="imgLink" href="" target="_blank"><img class="imgCard" src="${loja.imgLoja}" alt=""></a>
                             <div class="cardLojasInformacao">
                               <h2 class="nomeLoja">${loja.nomeLoja}</h2>
                               <a class="linkEndereco" href="${loja.enderecoLoja}"><span class="enderecoLoja">${loja.enderecoLoja}</span></a>
@@ -132,7 +132,7 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       }
       
       cardClone.querySelector('.imgCard').src = loja.imgLoja;
-      
+      cardClone.querySelector('.imgLink').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
       cardClone.querySelector('.linkEndereco').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
