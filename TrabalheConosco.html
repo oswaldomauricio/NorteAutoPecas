@@ -89,6 +89,15 @@
         .FonteMain1{
             margin: 0 50px 0 0;
         }
+        .contatoTrabalheConosco{
+            display: flex;
+        }
+        .telefone, .whatsapp{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 0 15px 0 0;
+        }
     </style>
 </head>
 
@@ -191,22 +200,30 @@
                     <label for="#">Selecione seu estado:</label>
                     <select id="estado" name="estado" required>
                         <option value="" disabled selected>Selecione um estado</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="AC">Acre</option>
-                        <option value="AP">Amapá</option>
-                        <option value="BA">Bahia</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="PA">Pará</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Pará">Pará</option>
                     </select>
                     <label for="cidade">Cidade:</label>
                     <input type="text" id="city" name="city" placeholder="Digite o nome da sua cidade:" required>
-                    <label for="telefone" >Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone:" required>
+                    <div class="contatoTrabalheConosco">
+                        <div class="whatsapp">
+                            <label for="whatsapp" >Whatsapp:</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Digite seu whatsapp:" required>
+                        </div>
+                        <div class="telefone">
+                            <label for="telefone" >Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone:" required>
+                        </div>
+                    </div>
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua carta de apresentação:" required></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="20" placeholder="Escreva sua carta de apresentação:" required></textarea>
                     <input type="text" name="_honey" style="display:none">
                     <!-- Campo de entrada de arquivo para PDF -->
                     <label for="arquivo">Enviar PDF:</label>

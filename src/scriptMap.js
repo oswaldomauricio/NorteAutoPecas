@@ -132,6 +132,7 @@ const fillContent = ({ nome, sigla, lojas, code }) => {
       }
       
       cardClone.querySelector('.imgCard').src = loja.imgLoja;
+      
       cardClone.querySelector('.nomeLoja').innerText = loja.nomeLoja;
       cardClone.querySelector('.enderecoLoja').innerText = loja.enderecoLoja;
       cardClone.querySelector('.linkEndereco').href = `https://maps.google.ch/maps?saddr=${loja.enderecoLoja}`;
